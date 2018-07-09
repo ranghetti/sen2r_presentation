@@ -72,7 +72,7 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 
 +++
 
-3. install external dependencies
+3: install external dependencies
     - [**mandatory**] [**GDAL**](http://www.gdal.org/)  (with support for JP2OpenJPEG format) 
     - [*optional*] [**sen2cor**](http://step.esa.int/main/third-party-plugins-2/sen2cor) (required to convert Level-1C to Level-2a)
     - [*optional*] **Wget** (required to work online)
@@ -94,12 +94,16 @@ TODO
 
 ### 1. Single interactive run
 ```r
+library(sen2r)
 sen2r()
 ```
 Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 1. set the parameters graphically;
 2. [optional] save a parameter JSON file to run/restore the processing;
 3. launch the processing.
+
+@fa[r-project]
+
 [![Sheet 1](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet1_small.png)<!-- .element height="20%" width="20%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet1.jpg) [![Sheet 2](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet2_small.png)<!-- .element height="20%" width="20%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet2.jpg) [![Sheet 3](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3_small.png)<!-- .element height="20%" width="20%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3.jpg) [![Sheet 4](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4_small.png)<!-- .element height="20%" width="20%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4.jpg)
 
 ---
