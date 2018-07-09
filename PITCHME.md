@@ -35,11 +35,11 @@
 - produce spectral indices;
 - obtain output prodicts in file formats managed by GDAL (e.g. GeoTIFF).
 
-@ulend
-
 In general, the aim is to provide R functions to *semi-automatically* perform recurrent processing operations on Sentinel-2 products.
 
 _Target_: data scientists with basic skills on R and geoprocessing.
+
+@ulend
 
 ---
 
