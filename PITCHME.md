@@ -44,9 +44,12 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 
 ### What **sen2r** is *not* for
 @ul
-- interactively search specific products ([&rightarrow; Copernicus Open Hub](https://scihub.copernicus.eu/dhus));
-- download products through a user-friendly interface (&rightarrow; GeoGrabber);
-- interactively perform processing operations on specific images ([&rightarrow; ESA SNAP](http://step.esa.int/main/toolboxes/snap)).
+- interactively search specific products
+([&rightarrow; Copernicus Open Hub](https://scihub.copernicus.eu/dhus))
+- download products through a user-friendly interface
+(&rightarrow; GeoGrabber)
+- interactively perform processing operations on specific images
+([&rightarrow; ESA SNAP](http://step.esa.int/main/toolboxes/snap))
 @ulend
 
 ---
