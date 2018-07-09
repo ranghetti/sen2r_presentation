@@ -160,3 +160,13 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 - improve user experience (GUI interface, documentation, logging);
 - several bug fixes (users can report them on [GitHub](https://github.com/ranghetti/sen2r/issues));
 - publish a stable version on [CRAN](https://cran.r-project.org).
+
++++
+
+### Test the package
+
+You are the beta-testers!
+
+In case of errors, [open a new issue on GitHub](https://github.com/ranghetti/sen2r/issues).
+
+
