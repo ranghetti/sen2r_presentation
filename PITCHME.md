@@ -25,16 +25,13 @@
 ---
 
 ### What **sen2r** is for
-
 @ul
-
 - download Sentinel-2 images (Level-1C or 2A) matching input conditions;
 - apply [sen2cor](http://step.esa.int/main/third-party-plugins-2/sen2cor) to atmospherically correct Level-1C products;
 - perform geometric manupulation of images (clip, rescale, reproject, merge contiguous tiles, etc.);
 - apply a cloud mask;
 - produce spectral indices;
 - obtain output prodicts in file formats managed by GDAL (e.g. GeoTIFF).
-
 @ulend
 
 +++
@@ -46,9 +43,11 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 +++
 
 ### What **sen2r** is *not* for
+@ul
 - interactively search specific products ([&rightarrow; Copernicus Open Hub](https://scihub.copernicus.eu/dhus));
 - download products through a user-friendly interface (&rightarrow; GeoGrabber);
 - interactively perform processing operations on specific images ([&rightarrow; ESA SNAP](http://step.esa.int/main/toolboxes/snap)).
+@ulend
 
 ---
 
