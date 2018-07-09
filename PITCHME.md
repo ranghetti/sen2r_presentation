@@ -49,11 +49,11 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 
 ### Standard installation
 1. install the package **devtools**
-    ```
+    ```{lang = r, eval = FALSE}
     install.packages("devtools")
     ```
 2. install **sen2r** from [GitHub](https://github.com/ranghetti/sen2r) and load it
-    ```
+    ```{lang = r, eval = FALSE}
     devtools::install_github("ranghetti/sen2r")
     library(sen2r)
     ```
