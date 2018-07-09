@@ -152,7 +152,7 @@ sen2r(
 ```
 
 See the [documentation of the function](https://ranghetti.github.io/sen2r/reference/sen2r.html):
-```{r, eval = FALSE}
+```r
 ?sen2r
 ```
 
@@ -161,12 +161,16 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 ## Intermediate functions
 Functions used by `sen2r()` to perform specific steps, and which can be used individually:
 
++++
+
 ### [Find and download Sentinel-2 products](https://ranghetti.github.io/sen2r/reference/index.html#section-find-and-download-sentinel-products)
 | | |
 ---|---
 `s2_list()` | [Retrieve list of available products.](https://ranghetti.github.io/sen2r/reference/s2_list.html)
 `s2_download()` | [Download S2 products.](https://ranghetti.github.io/sen2r/reference/s2_download.html)
 `sen2cor()` | [Correct L1C products using sen2cor](https://ranghetti.github.io/sen2r/reference/sen2cor.html)
+
++++
 
 ### [Read and convert SAFE format](https://ranghetti.github.io/sen2r/reference/index.html#section-read-and-convert-safe-format)
 
