@@ -9,3 +9,15 @@
 .titlepage {
   layout: center-right;
 }
+
+.title-top-right {
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    margin: 0 0 20px 0 !important;
+    color: #eee !important;
+    font-weight: normal !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.03em !important;
+    font-family: sans-serif;
+}
