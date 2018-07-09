@@ -1,5 +1,6 @@
 # **sen2r**: an R toolbox to find, download and preprocess Sentinel-2 data
-![Sentinel-2 wallpaper](https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg)
+
+---?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg
 
 ---
 
@@ -46,7 +47,7 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 @ul
 - interactively search specific products<br/>([&rightarrow; Copernicus Open Hub](https://scihub.copernicus.eu/dhus));
 - download products through a user-friendly interface<br/>(&rightarrow; GeoGrabber);
-- interactively perform processing operations on specific images<br/>([&rightarrow; ESA SNAP](http://step.esa.int/main/toolboxes/snap)).@note[Fragment specific speaker notes are optional.]
+- interactively perform processing operations on specific images<br/>([&rightarrow; ESA SNAP](http://step.esa.int/main/toolboxes/snap)).
 @ulend
 
 ---
