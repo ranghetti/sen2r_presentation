@@ -5,3 +5,7 @@
 .reveal pre {
   width: 120%;
 }
+
+.titlepage {
+  layout: center-right;
+}
