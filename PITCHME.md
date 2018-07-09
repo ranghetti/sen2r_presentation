@@ -28,7 +28,7 @@
 
 ---
 
-### What ![sen2r](https://raw.githubusercontent.com/ranghetti/sen2r/master/man/figures/sen2r_logo_200px.png) is for
+### What <span style="color:#5793dd;vertical-align:text-bottom;font-size:90%;font-weight:500;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:850;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:700;">r</span> is for
 @ul
 - download Sentinel-2 images (Level-1C or 2A) matching input conditions;
 - apply [sen2cor](http://step.esa.int/main/third-party-plugins-2/sen2cor) to atmospherically correct Level-1C products;
