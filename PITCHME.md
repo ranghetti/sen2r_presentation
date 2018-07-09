@@ -46,7 +46,7 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 @ul
 - interactively search specific products<br/>([&rightarrow; Copernicus Open Hub](https://scihub.copernicus.eu/dhus));
 - download products through a user-friendly interface<br/>(&rightarrow; GeoGrabber);
-- interactively perform processing operations on specific images<br/>([&rightarrow; ESA SNAP](http://step.esa.int/main/toolboxes/snap)).
+- interactively perform processing operations on specific images<br/>([&rightarrow; ESA SNAP](http://step.esa.int/main/toolboxes/snap)).@note[Fragment specific speaker notes are optional.]
 @ulend
 
 ---
