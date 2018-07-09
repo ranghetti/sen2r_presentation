@@ -58,15 +58,24 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 ## Installation
 
 ### Standard installation
+
+@ul
+
 1. install the package **devtools**
     ```r
     install.packages("devtools")
     ```
+
++++
+
 2. install **sen2r** from [GitHub](https://github.com/ranghetti/sen2r) and load it
     ```r
     devtools::install_github("ranghetti/sen2r")
     library(sen2r)
     ```
+
++++
+
 3. install external dependencies
     - [**mandatory**] [**GDAL**](http://www.gdal.org/)  (with support for JP2OpenJPEG format) 
     - [*optional*] [**sen2cor**](http://step.esa.int/main/third-party-plugins-2/sen2cor) (required to convert Level-1C to Level-2a)
