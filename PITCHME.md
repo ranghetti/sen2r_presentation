@@ -49,11 +49,11 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 
 ### Standard installation
 1. install the package **devtools**
-    ```{lang = r, eval = FALSE}
+    ```r
     install.packages("devtools")
     ```
 2. install **sen2r** from [GitHub](https://github.com/ranghetti/sen2r) and load it
-    ```{lang = r, eval = FALSE}
+    ```r
     devtools::install_github("ranghetti/sen2r")
     library(sen2r)
     ```
@@ -62,7 +62,7 @@ _Target_: data scientists with basic skills on R and geoprocessing.
     - [*optional*] [**sen2cor**](http://step.esa.int/main/third-party-plugins-2/sen2cor) (required to convert Level-1C to Level-2a)
     - [*optional*] **Wget** (required to work online)
     - [*optional*] [**aria2**](https://aria2.github.io/) (to speed up the download of SAFE archives)
-    ```
+    ```r
     check_sen2r_deps() # graphical mode
     # or
     sen2r:::load_binpaths(c("python", "wget", "aria2c", "gdal", "sen2cor")) # automatic mode
@@ -78,7 +78,7 @@ TODO
 ## Usage
 
 ### 1. Single interactive run
-```{r, eval = FALSE}
+```r
 sen2r()
 ```
 Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
@@ -91,11 +91,11 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 
 ### 2. Run from an existing parameter file
 Launch it from R commandline:
-```{r, eval = FALSE}
+```r
 sen2r("/path/of/the/existing/parameter_file.json")
 ```
 Launch it from the terminal:
-```{bash, eval = FALSE}
+```bash
 R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 ```
 
@@ -103,7 +103,7 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 
 ### 3. Launch as R function, using function arguments
 
-```{r, eval = FALSE}
+```r
 example_dir <- system.file("extdata","example_files", package="sen2r")
 safe_dir <- file.path(example_dir, "safe")
 out_dir <- file.path(example_dir, "out")
