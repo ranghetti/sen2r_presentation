@@ -102,7 +102,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 2. [optional] save a parameter JSON file to run/restore the processing;
 3. launch the processing.
 
-@fa[r-project](Launch R)
+@fa[angle-double-right]
 
 +++
 
