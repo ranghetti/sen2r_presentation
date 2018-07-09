@@ -60,12 +60,12 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 ### Standard installation
 
 @ol
--. install the package **devtools**
+- install the package **devtools**
     ```r
     install.packages("devtools")
     ```
 
--. install **sen2r** from [GitHub](https://github.com/ranghetti/sen2r) and load it
+- install **sen2r** from [GitHub](https://github.com/ranghetti/sen2r) and load it
     ```r
     devtools::install_github("ranghetti/sen2r")
     library(sen2r)
