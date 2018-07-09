@@ -25,12 +25,14 @@
 ---
 
 ### What **sen2r** is for
+@ul
 - download Sentinel-2 images (Level-1C or 2A) matching input conditions;
 - apply [sen2cor](http://step.esa.int/main/third-party-plugins-2/sen2cor) to atmospherically correct Level-1C products;
 - perform geometric manupulation of images (clip, rescale, reproject, merge contiguous tiles, etc.);
 - apply a cloud mask;
 - produce spectral indices;
 - obtain output prodicts in file formats managed by GDAL (e.g. GeoTIFF).
+@ulend
 
 In general, the aim is to provide R functions to *semi-automatically* perform recurrent processing operations on Sentinel-2 products.
 
