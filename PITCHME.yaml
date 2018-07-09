@@ -3,6 +3,5 @@ layout : center
 logo : https://raw.githubusercontent.com/ranghetti/sen2r/master/man/figures/sen2r_logo_200px.png
 logo-position : top-right
 slide-number : true
-footnote : "<a style='text-decoration:none; color: black;' href='#/2'>Presentation Menu</a>"
 theme-override : assets/css/PITCHME.css
 published : false
