@@ -49,11 +49,11 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 
 ### Standard installation
 1. install the package **devtools**
-    ```{r, eval = FALSE}
+    ```
     install.packages("devtools")
     ```
 2. install **sen2r** from [GitHub](https://github.com/ranghetti/sen2r) and load it
-    ```{r, eval = FALSE}
+    ```
     devtools::install_github("ranghetti/sen2r")
     library(sen2r)
     ```
@@ -62,7 +62,7 @@ _Target_: data scientists with basic skills on R and geoprocessing.
     - [*optional*] [**sen2cor**](http://step.esa.int/main/third-party-plugins-2/sen2cor) (required to convert Level-1C to Level-2a)
     - [*optional*] **Wget** (required to work online)
     - [*optional*] [**aria2**](https://aria2.github.io/) (to speed up the download of SAFE archives)
-    ```{r, eval = FALSE}
+    ```
     check_sen2r_deps() # graphical mode
     # or
     sen2r:::load_binpaths(c("python", "wget", "aria2c", "gdal", "sen2cor")) # automatic mode
