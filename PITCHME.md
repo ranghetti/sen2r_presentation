@@ -167,6 +167,7 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 
 You are the beta-testers!
 
-In case of errors, [open a new issue on GitHub](https://github.com/ranghetti/sen2r/issues).
+In case of errors, [open a new issue on GitHub](https://github.com/ranghetti/sen2r/issues)
+*(anche in italiano)*.
 
 
