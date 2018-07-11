@@ -178,7 +178,7 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "pkg_version": ["0.3.2"]
 }
 ```
-
+R
 ```r
 sen2r(/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example01.json)
 ```
