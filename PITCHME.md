@@ -195,10 +195,7 @@ example_extent <- sf::st_read(system.file("extdata/example_files/scalve.kml", pa
 example_timewindow <- c("2018-07-07","2018-07-11")
 ```
 
-+++
-
 #### Example 03
-(equivalent to example 02)
 ```r
 sen2r(
   gui = FALSE,                         # run without opening the GUI
@@ -222,6 +219,7 @@ sen2r(
   path_indices = out_dir               # save here indices
 )
 ```
+(equivalent to example 02)
 
 +++
 
