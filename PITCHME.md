@@ -73,15 +73,15 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 +++
 
 3: install external dependencies
-    - [**mandatory**] [**GDAL**](http://www.gdal.org/)  (with support for JP2OpenJPEG format) 
-    - [*optional*] [**sen2cor**](http://step.esa.int/main/third-party-plugins-2/sen2cor) (required to convert Level-1C to Level-2a)
-    - [*optional*] **Wget** (required to work online)
-    - [*optional*] [**aria2**](https://aria2.github.io/) (to speed up the download of SAFE archives)
-    ```r
-    check_sen2r_deps() # graphical mode
-    # or
-    sen2r:::load_binpaths(c("python", "wget", "aria2c", "gdal", "sen2cor")) # automatic mode
-    ```
+- [**mandatory**] [**GDAL**](http://www.gdal.org/)  (with support for JP2OpenJPEG format) 
+- [*optional*] [**sen2cor**](http://step.esa.int/main/third-party-plugins-2/sen2cor) (required to convert Level-1C to Level-2a)
+- [*optional*] **Wget** (required to work online)
+- [*optional*] [**aria2**](https://aria2.github.io/) (to speed up the download of SAFE archives)
+```r
+check_sen2r_deps() # graphical mode
+# or
+sen2r:::load_binpaths(c("python", "wget", "aria2c", "gdal", "sen2cor")) # automatic mode
+```
 
 ---
 
@@ -102,11 +102,9 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 2. [optional] save a parameter JSON file to run/restore the processing;
 3. launch the processing.
 
-[@fa[terminal]](http://10.0.1.230:8787)
-
 +++
 
-GUI preview: 
+GUI preview ([@fa[terminal]](http://10.0.1.230:8787)): 
 
 | | |
 ---|---
