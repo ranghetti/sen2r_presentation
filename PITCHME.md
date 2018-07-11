@@ -186,17 +186,19 @@ system.file(sen2r("/mnt/nr_working/luigi/data/s2tsp/180719_presentation/example0
 ---
 
 ### 3. Launch as R function, using function arguments
+See the [documentation of the function](https://ranghetti.github.io/sen2r/reference/sen2r.html):
+```r
+?sen2r
+```
 
+#### Example 03
 ```r
 example_dir <- "/mnt/nr_working/luigi/code/s2tsp/20180719_presentation"
 safe_dir <- file.path(example_dir, "safe")
 out_dir <- file.path(example_dir, "out")
 example_extent <- sf::st_read(system.file("extdata/example_files/scalve.kml", package="sen2r"))
 example_timewindow <- c("2018-07-07","2018-07-11")
-```
 
-#### Example 03
-```r
 sen2r(
   gui = FALSE,                         # run without opening the GUI
   online = FALSE,                      # use only local SAFE archives
@@ -233,11 +235,6 @@ sen2r(
   path_out = out_dir,
   path_indices = out_dir
 )
-```
-
-See the [documentation of the function](https://ranghetti.github.io/sen2r/reference/sen2r.html):
-```r
-?sen2r
 ```
 
 ---
