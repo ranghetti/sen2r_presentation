@@ -220,6 +220,9 @@ sen2r(
   path_indices = out_dir               # save here indices
 )
 ```
+
++++
+
 or use a parameter file and change only some parameters
 ```r
 sen2r(
