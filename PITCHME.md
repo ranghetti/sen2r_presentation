@@ -191,6 +191,8 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 ?sen2r
 ```
 
++++
+
 #### Example 03
 ```r
 example_dir <- "/mnt/nr_working/luigi/code/s2tsp/20180719_presentation"
