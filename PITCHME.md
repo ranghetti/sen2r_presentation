@@ -192,44 +192,43 @@ example_dir <- "/mnt/nr_working/luigi/code/s2tsp/20180719_presentation"
 safe_dir <- file.path(example_dir, "safe")
 out_dir <- file.path(example_dir, "out")
 example_extent <- sf::st_read(system.file("extdata/example_files/scalve.kml", package="sen2r"))
+example_timewindow <- c("2018-07-07","2018-07-11")
 ```
 
 #### Example 03
 (equivalent to example 02)
 ```r
-# 
 sen2r(
   gui = FALSE,                         # run without opening the GUI
+  online = FALSE,                      # use only local SAFE archives
   step_atmcorr = "l2a",                # consider only Level-2A products
+  timewindow = example_timewindow,     # define the time window
   extent = example_extent,             # set the desired extent
   extent_name = "Scalve",              # set the name (used in output files)
+  s2tiles_selected = "32TNR",          # use only 32TNR tiles
   extent_as_mask = TRUE,               # clip on the input polygon,
-  timewindow = as.Date("2016-12-05"),  # set the time window
   list_prods = "BOA",                  # produce Surface Reflectance
-  list_indices = c("MSAVI", "NDRE"),   # produce these spectral indices
+  list_indices = c("MSAVI"),           # produce these spectral indices
   mask_type = "cloud_medium_proba",    # define a cloud mask
+  max_mask = 80,                       # do not produce images with a cover > 80%
+  mask_smooth = 100,                   # bufferize cloud coverages with a 100m radius
+  mask_buffer = 100,                   # use a smoothing radius of 100m
+  proj = 4326,                         # reproject in geographical coordinates
+  path_l1c = safe_dir,                 # save here SAFE archives
   path_l2a = safe_dir,                 # save here SAFE archives
   path_out = out_dir,                  # save here output products
   path_indices = out_dir               # save here indices
 )
 ```
-
-#### Example 04
+or use a parameter file and change only some parameters
 ```r
-# 
 sen2r(
-  gui = FALSE,                         # run without opening the GUI
-  step_atmcorr = "l2a",                # consider only Level-2A products
-  extent = example_extent,             # set the desired extent
-  extent_name = "Scalve",              # set the name (used in output files)
-  extent_as_mask = TRUE,               # clip on the input polygon,
-  timewindow = as.Date("2016-12-05"),  # set the time window
-  list_prods = "BOA",                  # produce Surface Reflectance
-  list_indices = c("MSAVI", "NDRE"),   # produce these spectral indices
-  mask_type = "cloud_medium_proba",    # define a cloud mask
-  path_l2a = safe_dir,                 # save here SAFE archives
-  path_out = out_dir,                  # save here output products
-  path_indices = out_dir               # save here indices
+  system.file("extdata/example_files/scalve.kml", package="sen2r"),
+  timewindow = example_timewindow,
+  path_l1c = safe_dir,
+  path_l2a = safe_dir,
+  path_out = out_dir,
+  path_indices = out_dir
 )
 ```
 
