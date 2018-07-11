@@ -128,9 +128,9 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 
 +++
 
-#### Run example
+#### Example 02
 
-`/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example01.json`
+`/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example02.json`
 ```json
 {
   "preprocess": [true],
@@ -141,9 +141,9 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "overwrite_safe": [false],
   "rm_safe": ["no"],
   "step_atmcorr": ["auto"],
-  "timewindow": [null],
+  "timewindow": ["2018-07-07","2018-07-11"], // edited
   "timeperiod": ["full"],
-  "extent": ["/home/lranghetti/share/git/github/ranghetti/sen2r/inst/extdata/example_files/scalve.kml"], // edited
+  "extent": ["~/R/x86_64-pc-linux-gnu-library/3.4/sen2r/extdata/example_files/scalve.kml"], // edited
   "s2tiles_selected": ["32TNR"],
   "s2orbits_selected": [null],
   "list_prods": ["BOA"],
@@ -167,12 +167,12 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "index_datatype": ["Int16"],
   "compression": ["DEFLATE"],
   "overwrite": [false],
-  "path_l1c": ["/home/lranghetti/share/git/github/ranghetti/sen2r/inst/extdata/example_files/safe"], // edited
-  "path_l2a": ["/home/lranghetti/share/git/github/ranghetti/sen2r/inst/extdata/example_files/safe"], // edited
+  "path_l1c": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/safe"], // edited
+  "path_l2a": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/safe"], // edited
   "path_tiles": [null],
   "path_merged": [null],
-  "path_out": ["/home/lranghetti/share/git/github/ranghetti/sen2r/inst/extdata/example_files/out"], // edited
-  "path_indices": ["/home/lranghetti/share/git/github/ranghetti/sen2r/inst/extdata/example_files/out"], // edited
+  "path_out": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/out"], // edited
+  "path_indices": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/out"], // edited
   "path_subdirs": [true],
   "thumbnails": [true],
   "pkg_version": ["0.3.2"]
@@ -180,20 +180,43 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 ```
 R
 ```r
-sen2r(/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example01.json)
+system.file(sen2r("/mnt/nr_working/luigi/data/s2tsp/180719_presentation/example01.json"))
 ```
-
 
 ---
 
 ### 3. Launch as R function, using function arguments
 
 ```r
-example_dir <- system.file("extdata","example_files", package="sen2r")
+example_dir <- "/mnt/nr_working/luigi/code/s2tsp/20180719_presentation"
 safe_dir <- file.path(example_dir, "safe")
 out_dir <- file.path(example_dir, "out")
-example_extent <- sf::st_read(file.path(safe_dir, "scalve.kml"))
+example_extent <- sf::st_read(system.file("extdata/example_files/scalve.kml", package="sen2r"))
+```
 
+#### Example 03
+(equivalent to example 02)
+```r
+# 
+sen2r(
+  gui = FALSE,                         # run without opening the GUI
+  step_atmcorr = "l2a",                # consider only Level-2A products
+  extent = example_extent,             # set the desired extent
+  extent_name = "Scalve",              # set the name (used in output files)
+  extent_as_mask = TRUE,               # clip on the input polygon,
+  timewindow = as.Date("2016-12-05"),  # set the time window
+  list_prods = "BOA",                  # produce Surface Reflectance
+  list_indices = c("MSAVI", "NDRE"),   # produce these spectral indices
+  mask_type = "cloud_medium_proba",    # define a cloud mask
+  path_l2a = safe_dir,                 # save here SAFE archives
+  path_out = out_dir,                  # save here output products
+  path_indices = out_dir               # save here indices
+)
+```
+
+#### Example 04
+```r
+# 
 sen2r(
   gui = FALSE,                         # run without opening the GUI
   step_atmcorr = "l2a",                # consider only Level-2A products
