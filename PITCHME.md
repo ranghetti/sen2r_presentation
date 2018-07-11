@@ -111,8 +111,6 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 @fa[image](Product selection)<br/>[![Sheet 1](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet1_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet1.jpg)   |   @fa[clone](Spatio-temporal selection)<br/>[![Sheet 2](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet2_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet2.jpg)
 @fa[th](Processing options)<br/>[![Sheet 3](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3.jpg)   |   @fa[calculator](Spectral indices selection)<br/>[![Sheet 4](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4.jpg)
 
-+++
-
 #### Run example
 [@fa[terminal]](http://10.0.1.230:8787)
 
@@ -127,6 +125,66 @@ Launch it from the terminal:
 ```bash
 R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 ```
+
++++
+
+#### Run example
+
+```bash
+/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example01.json
+```
+```json
+{
+  "preprocess": [true],
+  "s2_levels": ["l1c", "l2a"],
+  "sel_sensor": ["s2a", "s2b"],
+  "online": [true],
+  "downloader": ["aria2"],
+  "overwrite_safe": [false],
+  "rm_safe": ["no"],
+  "step_atmcorr": ["auto"],
+  "timewindow": [null],
+  "timeperiod": ["full"],
+  "extent": ["/home/lranghetti/share/git/github/ranghetti/sen2r/inst/extdata/example_files/scalve.kml"], // edited
+  "s2tiles_selected": ["32TNR"],
+  "s2orbits_selected": [null],
+  "list_prods": ["BOA"],
+  "list_indices": ["MSAVI"],
+  "index_source": ["BOA"],
+  "mask_type": ["cloud_medium_proba"],
+  "max_mask": [80],
+  "mask_smooth": [100],
+  "mask_buffer": [100],
+  "clip_on_extent": [true],
+  "extent_as_mask": [true],
+  "extent_name": ["Scalve"],
+  "reference_path": [null],
+  "res": [null],
+  "res_s2": ["10m"],
+  "unit": ["Meter"],
+  "proj": ["+proj=longlat +datum=WGS84 +no_defs"],
+  "resampling": ["near"],
+  "resampling_scl": ["near"],
+  "outformat": ["GTiff"],
+  "index_datatype": ["Int16"],
+  "compression": ["DEFLATE"],
+  "overwrite": [false],
+  "path_l1c": ["/home/lranghetti/share/git/github/ranghetti/sen2r/inst/extdata/example_files/safe"], // edited
+  "path_l2a": ["/home/lranghetti/share/git/github/ranghetti/sen2r/inst/extdata/example_files/safe"], // edited
+  "path_tiles": [null],
+  "path_merged": [null],
+  "path_out": ["/home/lranghetti/share/git/github/ranghetti/sen2r/inst/extdata/example_files/out"], // edited
+  "path_indices": ["/home/lranghetti/share/git/github/ranghetti/sen2r/inst/extdata/example_files/out"], // edited
+  "path_subdirs": [true],
+  "thumbnails": [true],
+  "pkg_version": ["0.3.2"]
+}
+```
+
+```r
+sen2r(/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example01.json)
+```
+
 
 ---
 
