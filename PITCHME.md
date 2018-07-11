@@ -130,7 +130,7 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 
 #### Run example
 
-**`/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example01.json`**
+`/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example01.json`
 ```json
 {
   "preprocess": [true],
