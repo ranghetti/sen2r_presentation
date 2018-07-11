@@ -164,7 +164,7 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 ### [Find and download Sentinel-2 products](https://ranghetti.github.io/sen2r/reference/index.html#section-find-and-download-sentinel-products)
 | | |
 ---|---
-```s2_list()``` | [Retrieve list of available products.](https://ranghetti.github.io/sen2r/reference/s2_list.html)
+`s2_list()` | [Retrieve list of available products.](https://ranghetti.github.io/sen2r/reference/s2_list.html)
 `s2_download()` | [Download S2 products.](https://ranghetti.github.io/sen2r/reference/s2_download.html)
 `sen2cor()` | [Correct L1C products using sen2cor](https://ranghetti.github.io/sen2r/reference/sen2cor.html)
 
