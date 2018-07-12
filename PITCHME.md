@@ -194,7 +194,10 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 +++
 
 #### Example 03
+`/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example03.R`
 ```r
+library(sen2r)
+
 example_dir <- "/mnt/nr_working/luigi/code/s2tsp/20180719_presentation"
 safe_dir <- file.path(example_dir, "safe")
 out_dir <- file.path(example_dir, "out")
@@ -265,6 +268,30 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 `gdal_warp()` | [Clip, reproject and warp raster files](https://ranghetti.github.io/sen2r/reference/gdal_warp.html)
 `s2_mask()` | [Apply cloud masks](https://ranghetti.github.io/sen2r/reference/s2_mask.html)
 `s2_calcindices()` | [Compute maps of spectral indices](https://ranghetti.github.io/sen2r/reference/s2_calcindices.html)
+
+---
+
+## Schedule a daily download
+
+What is needed:
+1. a R script to run;
+2. [Linux] a cron job or a systemd timer;
+    [Windows] a scheduled task.
+    
+++++
+
+#### Example 04
+`/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example04.R`
+sen2r(
+  system.file("extdata/example_files/scalve.kml", package="sen2r"),
+  timewindow = example_timewindow,
+  path_l1c = safe_dir,
+  path_l2a = safe_dir,
+  path_out = out_dir,
+  path_indices = out_dir
+)
+
+
 
 ---
 
