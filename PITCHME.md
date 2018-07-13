@@ -169,18 +169,18 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "index_datatype": ["Int16"],
   "compression": ["DEFLATE"],
   "overwrite": [false],
-  "path_l1c": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/safe"],
-  "path_l2a": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/safe"],
+  "path_l1c": ["/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data/safe"],
+  "path_l2a": ["/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data/safe"],
   "path_tiles": [null],
   "path_merged": [null],
-  "path_out": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/out"],
-  "path_indices": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/out"],
+  "path_out": ["/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data/out"],
+  "path_indices": ["/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data/out"],
   "path_subdirs": [true],
   "thumbnails": [true],
   "pkg_version": ["0.3.2"]
 }
 ```
-@[10,12,36-37,40-41](edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.kml))
+@[10,12,36-37,40-41](edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
 
 +++
 
@@ -201,11 +201,11 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 +++
 
 #### Example 03
-`/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example03.R`
+`/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example03.R`
 ```r
 library(sen2r)
 
-example_dir <- "/mnt/nr_working/luigi/code/s2tsp/20180719_presentation"
+example_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
 safe_dir <- file.path(example_dir, "safe")
 out_dir <- file.path(example_dir, "out")
 example_extent <- sf::st_read(system.file("extdata/example_files/scalve.kml", package="sen2r"))
@@ -288,7 +288,7 @@ What is needed:
 ++++
 
 #### Example 04
-`/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example04.R`
+`/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example04.R`
 ```r
 sen2r(
   system.file("extdata/example_files/scalve.kml", package="sen2r"),
