@@ -252,6 +252,7 @@ sen2r(
   timewindow = example_timewindow,
   extent = example_extent,
   extent_name = "Esempio",
+  s2tiles_selected = NA,
   path_l1c = safe_dir,
   path_l2a = safe_dir,
   path_out = out_dir,
@@ -317,7 +318,7 @@ sen2r(
 
 +++
 
-##### Cron job
+##### Cron job 
 On Linux: add a crontab entry or create a systemd timer
 
 ```bash
@@ -353,6 +354,11 @@ crontab -e
 ```
 @[23,26](Now the job is scheduled to run every day at 0:20)
 
++++ 
+
+On Windows, use the [Task scheduler](https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page)
+
+![Task scheduler screenshot](https://necs.com/eV4SQL_KB/taskscheduler-library.png)
 ---
 
 ## Work in progress!
