@@ -358,7 +358,7 @@ crontab -e
 
 On Windows, use the [Task scheduler](https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page)
 
-![Task scheduler screenshot](https://necs.com/eV4SQL_KB/taskscheduler-library.png)
+![Task scheduler screenshot](https://upload.wikimedia.org/wikipedia/en/7/76/Windows_7_Task_Scheduler.png)
 ---
 
 ## Work in progress!
