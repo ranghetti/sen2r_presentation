@@ -314,7 +314,7 @@ log_path <- file.path(data_dir, strftime(Sys.time(), "sen2r_example04_%Y%m%d_%H%
 sen2r(
   "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example02.json",
   timewindow = 5,
-  log = file.path(data_dir, 
+  log = file.path(data_dir, strftime(Sys.time(),"sen2r_example_%Y%m%d_%H%M%S.log.txt"))
 )
 ```
 @[8](Search and download the last 5 days)
