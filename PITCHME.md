@@ -373,17 +373,17 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 ### Aim
 Providing NRT images of a proxy of the vegetation status (NDRE index) over the Lomellina rice cultivation district (PV, Italy).
 
-+++
++++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=auto 75%&position=center&opacity=50
 
 ### Steps
 
 @ol
-- Automatically produce Sentinel-2 images:
-    - Download them when available (3 tiles in a single orbit);
-    - Merge the tiles;
-    - Clip on the Lomellina extent and mask the non arable land;
-    - Mask the cloud-covered surface (with a buffer over clouds);
-    - Compute NDRE index.
+- Automatically produce Sentinel-2 images:<ul>
+    <li>Download them when available (3 tiles in a single orbit);</li>
+    <li>Merge the tiles;</li>
+    <li>Clip on the Lomellina extent and mask the non arable land;</li>
+    <li>Mask the cloud-covered surface (with a buffer over clouds);</li>
+    <li>Compute NDRE index.</li></ul>
 - Load image on a Geoserver;
 - Expose them with a geoportal (Get-IT).
 @olend
