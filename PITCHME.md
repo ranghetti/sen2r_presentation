@@ -55,7 +55,7 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 - interactively perform processing operations on specific images<br/>([&rightarrow; ESA SNAP](http://step.esa.int/main/toolboxes/snap)).
 @ulend
 
----?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
+---
 
 ## Installation
 
@@ -317,6 +317,8 @@ sen2r(
   log = file.path(data_dir, 
 )
 ```
+@[8](Search and download the last 5 days)
+@[9](Save a log file to monitor the processing chain)
 
 +++
 
