@@ -373,7 +373,7 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 ### Aim
 Providing NRT images of a proxy of the vegetation status (NDRE index) over the Lomellina rice cultivation district (PV, Italy).
 
-+++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=auto 75%&position=center&opacity=50
++++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=75% auto&position=center&opacity=50
 
 ### Steps
 
@@ -384,7 +384,7 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
     <li>Clip on the Lomellina extent and mask the non arable land;</li>
     <li>Mask the cloud-covered surface (with a buffer over clouds);</li>
     <li>Compute NDRE index.</li></ul>
-- Load image on a Geoserver;
+- Load images on a Geoserver;
 - Expose them with a geoportal (Get-IT).
 @olend
 
