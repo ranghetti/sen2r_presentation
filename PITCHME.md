@@ -368,7 +368,25 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 
 ## An example from SATURNO project
 
-<img src="https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png" alt="SATURNO logo" width="50%"/>
+[<img src="https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png" alt="SATURNO logo" width="50%"/>](https://www.progettosaturno.it/)
+
+### Aim
+Providing NRT images of a proxy of the vegetation status (NDRE index) over the Lomellina rice cultivation district (PV, Italy).
+
++++
+
+### Steps
+
+@ol
+- Automatically produce Sentinel-2 images:
+    - Download them when available (3 tiles in a single orbit);
+    - Merge the tiles;
+    - Clip on the Lomellina extent and mask the non arable land;
+    - Mask the cloud-covered surface (with a buffer over clouds);
+    - Compute NDRE index.
+- Load image on a Geoserver;
+- Expose them with a geoportal (Get-IT).
+@olend
 
 ---
 
