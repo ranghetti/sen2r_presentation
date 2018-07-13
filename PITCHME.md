@@ -78,10 +78,12 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 - [*optional*] **Wget** (required to work online)
 - [*optional*] [**aria2**](https://aria2.github.io/) (to speed up the download of SAFE archives)
 ```r
-check_sen2r_deps() # graphical mode
+check_sen2r_deps()
 # or
-sen2r:::load_binpaths(c("python", "wget", "aria2c", "gdal", "sen2cor")) # automatic mode
+sen2r:::load_binpaths(c("python", "wget", "aria2c", "gdal", "sen2cor"))
 ```
+@[1](graphical mode)
+@[3](automatic mode)
 
 ---
 
