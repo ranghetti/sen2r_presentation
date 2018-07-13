@@ -388,6 +388,8 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 - Expose them with a geoportal (Get-IT).
 @olend
 
++++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=75% auto&position=center&opacity=50
+
 ---
 
 ## Work in progress!
