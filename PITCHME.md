@@ -180,7 +180,7 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "pkg_version": ["0.3.2"]
 }
 ```
-@[10,12-13,24,36-37,40-41](edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
+@[10,12-13,24,36-37,40-41](These lines were edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
 
 +++
 
