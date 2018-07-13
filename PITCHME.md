@@ -132,7 +132,7 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 
 #### Example 02
 
-`/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example02.json`
+`/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example02.json`
 ```json
 {
   "preprocess": [true],
@@ -143,9 +143,9 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "overwrite_safe": [false],
   "rm_safe": ["no"],
   "step_atmcorr": ["auto"],
-  "timewindow": ["2018-07-07","2018-07-11"], // edited
+  "timewindow": ["2018-07-07","2018-07-11"],
   "timeperiod": ["full"],
-  "extent": ["~/R/x86_64-pc-linux-gnu-library/3.4/sen2r/extdata/example_files/scalve.kml"], // edited
+  "extent": ["~/R/x86_64-pc-linux-gnu-library/3.4/sen2r/extdata/example_files/scalve.kml"],
   "s2tiles_selected": ["32TNR"],
   "s2orbits_selected": [null],
   "list_prods": ["BOA"],
@@ -169,12 +169,12 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "index_datatype": ["Int16"],
   "compression": ["DEFLATE"],
   "overwrite": [false],
-  "path_l1c": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/safe"], // edited
-  "path_l2a": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/safe"], // edited
+  "path_l1c": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/safe"],
+  "path_l2a": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/safe"],
   "path_tiles": [null],
   "path_merged": [null],
-  "path_out": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/out"], // edited
-  "path_indices": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/out"], // edited
+  "path_out": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/out"],
+  "path_indices": ["/mnt/nr_working/luigi/data/s2tsp/180719_presentation/out"],
   "path_subdirs": [true],
   "thumbnails": [true],
   "pkg_version": ["0.3.2"]
