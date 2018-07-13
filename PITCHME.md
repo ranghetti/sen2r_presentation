@@ -320,7 +320,6 @@ sen2r(
 
 ##### Cron job 
 
-@div[left-60]
 On Linux: add a crontab entry or create a systemd timer
 
 ```bash
@@ -355,13 +354,12 @@ crontab -e
   20  0 * * * /usr/bin/Rscript /mnt/nr_working/luigi/docs/sen2r/180719_presentation/example04.R
 ```
 @[23,26](Now the job is scheduled to run every day at 0:20)
-@divend
 
-@div[right-40]
++++
+
 On Windows, use the [Task Scheduler](https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page)
 
-![Task Scheduler screenshot](https://upload.wikimedia.org/wikipedia/en/7/76/Windows_7_Task_Scheduler.png)
-@divend
+![Task Scheduler screenshot](https://i.stack.imgur.com/Aqa57.png)
 
 ---
 
