@@ -1,7 +1,7 @@
 theme : beige
 layout : center
 logo : https://raw.githubusercontent.com/ranghetti/sen2r/master/man/figures/sen2r_logo_200px.png
-background : https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg
+background : https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&opacity=20
 logo-position : top-right
 slide-number : true
 theme-override : assets/css/PITCHME.css
