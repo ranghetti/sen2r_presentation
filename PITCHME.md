@@ -180,9 +180,10 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "pkg_version": ["0.3.2"]
 }
 ```
+@[11,35-36,39-40](edited from)
 R
 ```r
-system.file(sen2r("/mnt/nr_working/luigi/data/s2tsp/180719_presentation/example01.json"))
+sen2r("/mnt/nr_working/luigi/data/s2tsp/180719_presentation/example01.json")
 ```
 
 ---
@@ -284,6 +285,7 @@ What is needed:
 
 #### Example 04
 `/mnt/nr_working/luigi/code/s2tsp/20180719_presentation/example04.R`
+```r
 sen2r(
   system.file("extdata/example_files/scalve.kml", package="sen2r"),
   timewindow = example_timewindow,
@@ -292,7 +294,7 @@ sen2r(
   path_out = out_dir,
   path_indices = out_dir
 )
-
+```
 
 
 ---
