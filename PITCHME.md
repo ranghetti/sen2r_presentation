@@ -239,6 +239,14 @@ sen2r(
 
 or use a parameter file and change only some parameters
 ```r
+library(sen2r)
+
+example_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
+safe_dir <- file.path(example_dir, "safe")
+out_dir <- file.path(example_dir, "out")
+example_extent <- sf::st_read(system.file("extdata/example_files/scalve.kml", package="sen2r"))
+example_timewindow <- c("2018-07-07","2018-07-11")
+
 sen2r(
   system.file("extdata/example_files/scalve.kml", package="sen2r"),
   timewindow = example_timewindow,
@@ -248,6 +256,7 @@ sen2r(
   path_indices = out_dir
 )
 ```
+(useful to launch similar processing chains changing only e.g. the extent)
 
 ---
 
