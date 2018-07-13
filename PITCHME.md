@@ -402,7 +402,7 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 
 ### Test the package
 
-You are the beta-testers!
+You can be the beta-testers!
 
 In case of errors, you are welcome to [open a new issue on GitHub](https://github.com/ranghetti/sen2r/issues)
 *(anche in italiano)*.
