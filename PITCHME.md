@@ -368,7 +368,7 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 
 ## An example from SATURNO project
 
-![SATURNO logo](https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png =50x)
+<img src="https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png" alt="SATURNO logo" width="50%"/>
 
 ---
 
