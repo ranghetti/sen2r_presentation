@@ -145,8 +145,8 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "step_atmcorr": ["auto"],
   "timewindow": ["2018-07-07","2018-07-11"],
   "timeperiod": ["full"],
-  "extent": ["~/R/x86_64-pc-linux-gnu-library/3.4/sen2r/extdata/example_files/scalve.kml"],
-  "s2tiles_selected": ["32TNR"],
+  "extent": ["/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data/fields_ex.geojson"],
+  "s2tiles_selected": [null],
   "s2orbits_selected": [null],
   "list_prods": ["BOA"],
   "list_indices": ["MSAVI"],
@@ -157,7 +157,7 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "mask_buffer": [100],
   "clip_on_extent": [true],
   "extent_as_mask": [true],
-  "extent_name": ["Scalve"],
+  "extent_name": ["Esempio"],
   "reference_path": [null],
   "res": [null],
   "res_s2": ["10m"],
@@ -180,7 +180,7 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
   "pkg_version": ["0.3.2"]
 }
 ```
-@[10,12,36-37,40-41](edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
+@[10,12-13,24,36-37,40-41](edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
 
 +++
 
@@ -205,10 +205,10 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 ```r
 library(sen2r)
 
-example_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
+data_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
 safe_dir <- file.path(example_dir, "safe")
 out_dir <- file.path(example_dir, "out")
-example_extent <- sf::st_read(system.file("extdata/example_files/scalve.kml", package="sen2r"))
+example_extent <- sf::st_read(file.path(data_dir,"fields_ex.geojson"))
 example_timewindow <- c("2018-07-07","2018-07-11")
 
 sen2r(
@@ -217,8 +217,7 @@ sen2r(
   step_atmcorr = "l2a",                # consider only Level-2A products
   timewindow = example_timewindow,     # define the time window
   extent = example_extent,             # set the desired extent
-  extent_name = "Scalve",              # set the name (used in output files)
-  s2tiles_selected = "32TNR",          # use only 32TNR tiles
+  extent_name = "Esempio",             # set the name (used in output files)
   extent_as_mask = TRUE,               # clip on the input polygon,
   list_prods = "BOA",                  # produce Surface Reflectance
   list_indices = c("MSAVI"),           # produce these spectral indices
@@ -237,19 +236,22 @@ sen2r(
 
 +++
 
+#### Example 03b
 or use a parameter file and change only some parameters
 ```r
 library(sen2r)
 
-example_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
+data_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
 safe_dir <- file.path(example_dir, "safe")
 out_dir <- file.path(example_dir, "out")
-example_extent <- sf::st_read(system.file("extdata/example_files/scalve.kml", package="sen2r"))
+example_extent <- sf::st_read(file.path(data_dir,"fields_ex.geojson"))
 example_timewindow <- c("2018-07-07","2018-07-11")
 
 sen2r(
   system.file("extdata/example_files/scalve.kml", package="sen2r"),
   timewindow = example_timewindow,
+  extent = example_extent,
+  extent_name = "Esempio",
   path_l1c = safe_dir,
   path_l2a = safe_dir,
   path_out = out_dir,
@@ -290,25 +292,65 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 ## Schedule a daily download
 
 What is needed:
-1. a R script to run;
-2. [Linux] a cron job or a systemd timer;
-    [Windows] a scheduled task.
+- a R script to run;
+- [additional] a JSON parameter file;
+- a cron job.
     
-++++
++++
 
 #### Example 04
+
+##### R script and JSON file
 `/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example04.R`
 ```r
+library(sen2r)
+
+data_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
+log_path <- file.path(data_dir, strftime(Sys.time(), "sen2r_example04_%Y%m%d_%H%M%S.log.txt"))
+
 sen2r(
-  system.file("extdata/example_files/scalve.kml", package="sen2r"),
-  timewindow = example_timewindow,
-  path_l1c = safe_dir,
-  path_l2a = safe_dir,
-  path_out = out_dir,
-  path_indices = out_dir
+  "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example02.json",
+  timewindow = 5,
+  log = file.path(data_dir, 
 )
 ```
 
++++
+
+##### Cron job
+On Linux: add a crontab entry or create a systemd timer
+
+```bash
+crontab -e
+```
+
+```bash
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+
+# Sentinel-2 example cron job
+  20  0 * * * /usr/bin/Rscript /mnt/nr_working/luigi/docs/sen2r/180719_presentation/example04.R
+```
 
 ---
 
