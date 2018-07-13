@@ -1,10 +1,6 @@
 ---?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover
-@div[right-50]
-# <div align="right">@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:)<br/>an R toolbox<br/>to find, download<br/>and preprocess<br/>Sentinel-2 data</div>)
-@divend@
-@div[left-40]
-![](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gitpitch.com/ranghetti/sen2r_presentation)
-@divend
+<div align="right">@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:)<br/>an R toolbox<br/>to find, download<br/>and preprocess<br/>Sentinel-2 data)</div>
+<div align="left">![](https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gitpitch.com/ranghetti/sen2r_presentation)</div>
 
 ---
 
