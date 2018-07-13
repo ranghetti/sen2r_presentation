@@ -181,9 +181,13 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 }
 ```
 @[10,12,36-37,40-41](edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.kml))
-R
+
++++
+
+Launch it:
+
 ```r
-sen2r("/mnt/nr_working/luigi/data/s2tsp/180719_presentation/example01.json")
+sen2r("/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example02.json")
 ```
 
 ---
