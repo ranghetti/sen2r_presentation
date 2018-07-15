@@ -153,7 +153,7 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 +++?code=scripts/example03.R&lang=r&title=<h4>Example 03</h4>`scripts/example03.R`
 (equivalent to example 02)
 
-+++?code=scripts/example03b.R&lang=r&title=<h4>Example 03b</h4>`scripts/example03b.R`
++++?code=scripts/example03b.R&lang=r&title=`scripts/example03b.R`
 You can also use a parameter file and change only some parameters
 (useful to launch similar processing chains changing only e.g. the extent)
 
