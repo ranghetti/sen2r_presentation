@@ -130,8 +130,7 @@ Launch it from the terminal:
 R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 ```
 
-+++?code=scripts/example02.json&lang=json&title=<
->Example 02</h4>`scripts/example02.json`
++++?code=scripts/example02.json&lang=json&title=<h4>Example 02</h4>`scripts/example02.json`
 @[10,12-13,24,36-37,40-41](These lines were edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
 
 +++
