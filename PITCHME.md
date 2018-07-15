@@ -130,7 +130,8 @@ Launch it from the terminal:
 R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 ```
 
-+++?code=scripts/example02.json&lang=json&title=<h4>Example 02</h4>`scripts/example02.json`
++++?code=scripts/example02.json&lang=json&title=<
+>Example 02</h4>`scripts/example02.json`
 @[10,12-13,24,36-37,40-41](These lines were edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
 
 +++
@@ -149,36 +150,11 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 ?sen2r
 ```
 
-+++
-
 +++?code=scripts/example03.R&lang=r&title=<h4>Example 03</h4>`scripts/example03.R`
 (equivalent to example 02)
 
-+++
-
-#### Example 03b
-or use a parameter file and change only some parameters
-```r
-library(sen2r)
-
-data_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
-safe_dir <- file.path(data_dir, "safe")
-out_dir <- file.path(data_dir, "out_ex02")
-example_extent <- sf::st_read(file.path(data_dir,"fields_ex.geojson"))
-example_timewindow <- c("2018-07-07","2018-07-11")
-
-sen2r(
-  system.file("extdata/example_files/scalve.json", package="sen2r"),
-  timewindow = example_timewindow,
-  extent = example_extent,
-  extent_name = "Esempio",
-  s2tiles_selected = NA,
-  path_l1c = safe_dir,
-  path_l2a = safe_dir,
-  path_out = out_dir,
-  path_indices = out_dir
-)
-```
++++?code=scripts/example03b.R&lang=r&title=<h4>Example 03b</h4>`scripts/example03b.R`
+You can also use a parameter file and change only some parameters
 (useful to launch similar processing chains changing only e.g. the extent)
 
 ---
@@ -190,24 +166,9 @@ What is needed:
 - [additional] a JSON parameter file;
 - a cron job.
     
-+++
-
-#### Example 04
-
-##### R script and JSON file
-`/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example04.R`
-```r
-library(sen2r)
-
-data_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
-log_path <- file.path(data_dir, strftime(Sys.time(), "sen2r_example04_%Y%m%d_%H%M%S.log.txt"))
-
-sen2r(
-  "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example02.json",
-  timewindow = 5,
-  log = file.path(data_dir, strftime(Sys.time(),"sen2r_example_%Y%m%d_%H%M%S.log.txt"))
-)
-```
++++?code=scripts/example04.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>`scripts/example04.R`
+You can also use a parameter file and change only some parameters
+(useful to launch similar processing chains changing only e.g. the extent)
 @[8](Search and download the last 5 days)
 @[9](Save a log file to monitor the processing chain)
 
@@ -246,7 +207,7 @@ crontab -e
 # m h  dom mon dow   command
 
 # Sentinel-2 example cron job
-  20  0 * * * /usr/bin/Rscript /mnt/nr_working/luigi/docs/sen2r/180719_presentation/example04.R
+  20  0 * * * /usr/bin/Rscript /home/lranghetti/share/git/github/ranghetti/sen2r_presentation/scripts/example04.R
 ```
 @[23,26](Now the job is scheduled to run every day at 0:20)
 
