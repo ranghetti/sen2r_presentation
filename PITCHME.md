@@ -208,8 +208,8 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 library(sen2r)
 
 data_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
-safe_dir <- file.path(example_dir, "safe")
-out_dir <- file.path(example_dir, "out")
+safe_dir <- file.path(data_dir, "safe")
+out_dir <- file.path(data_dir, "out")
 example_extent <- sf::st_read(file.path(data_dir,"fields_ex.geojson"))
 example_timewindow <- c("2018-07-07","2018-07-11")
 
