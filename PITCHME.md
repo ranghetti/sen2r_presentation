@@ -167,8 +167,6 @@ What is needed:
 - a cron job.
     
 +++?code=scripts/example04.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>`scripts/example04.R`
-You can also use a parameter file and change only some parameters
-(useful to launch similar processing chains changing only e.g. the extent)
 @[8](Search and download the last 5 days)
 @[9](Save a log file to monitor the processing chain)
 
