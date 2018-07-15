@@ -135,53 +135,8 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 #### Example 02
 
 `/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example02.json`
-```json
-{
-  "preprocess": [true],
-  "s2_levels": ["l1c", "l2a"],
-  "sel_sensor": ["s2a", "s2b"],
-  "online": [true],
-  "downloader": ["aria2"],
-  "overwrite_safe": [false],
-  "rm_safe": ["no"],
-  "step_atmcorr": ["auto"],
-  "timewindow": ["2018-07-07","2018-07-11"],
-  "timeperiod": ["full"],
-  "extent": ["/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data/fields_ex.geojson"],
-  "s2tiles_selected": [null],
-  "s2orbits_selected": [null],
-  "list_prods": ["BOA"],
-  "list_indices": ["MSAVI"],
-  "index_source": ["BOA"],
-  "mask_type": ["cloud_medium_proba"],
-  "max_mask": [80],
-  "mask_smooth": [100],
-  "mask_buffer": [100],
-  "clip_on_extent": [true],
-  "extent_as_mask": [true],
-  "extent_name": ["Esempio"],
-  "reference_path": [null],
-  "res": [null],
-  "res_s2": ["10m"],
-  "unit": ["Meter"],
-  "proj": ["+proj=longlat +datum=WGS84 +no_defs"],
-  "resampling": ["near"],
-  "resampling_scl": ["near"],
-  "outformat": ["GTiff"],
-  "index_datatype": ["Int16"],
-  "compression": ["DEFLATE"],
-  "overwrite": [false],
-  "path_l1c": ["/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data/safe"],
-  "path_l2a": ["/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data/safe"],
-  "path_tiles": [null],
-  "path_merged": [null],
-  "path_out": ["/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data/out"],
-  "path_indices": ["/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data/out"],
-  "path_subdirs": [true],
-  "thumbnails": [true],
-  "pkg_version": ["0.3.2"]
-}
-```
+---?gist=scripts/example_02.json&lang=json&title=scripts/example_02.json
+
 @[10,12-13,24,36-37,40-41](These lines were edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
 
 +++
@@ -209,13 +164,13 @@ library(sen2r)
 
 data_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
 safe_dir <- file.path(data_dir, "safe")
-out_dir <- file.path(data_dir, "out")
+out_dir <- file.path(data_dir, "out_ex02")
 example_extent <- sf::st_read(file.path(data_dir,"fields_ex.geojson"))
 example_timewindow <- c("2018-07-07","2018-07-11")
 
 sen2r(
   gui = FALSE,                         # run without opening the GUI
-  online = FALSE,                      # use only local SAFE archives
+  online = TRUE,                       # search available SAFE
   step_atmcorr = "l2a",                # consider only Level-2A products
   timewindow = example_timewindow,     # define the time window
   extent = example_extent,             # set the desired extent
@@ -244,13 +199,13 @@ or use a parameter file and change only some parameters
 library(sen2r)
 
 data_dir <- "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/data"
-safe_dir <- file.path(example_dir, "safe")
-out_dir <- file.path(example_dir, "out")
+safe_dir <- file.path(data_dir, "safe")
+out_dir <- file.path(data_dir, "out_ex02")
 example_extent <- sf::st_read(file.path(data_dir,"fields_ex.geojson"))
 example_timewindow <- c("2018-07-07","2018-07-11")
 
 sen2r(
-  system.file("extdata/example_files/scalve.kml", package="sen2r"),
+  system.file("extdata/example_files/scalve.json", package="sen2r"),
   timewindow = example_timewindow,
   extent = example_extent,
   extent_name = "Esempio",
