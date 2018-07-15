@@ -130,7 +130,7 @@ Launch it from the terminal:
 R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 ```
 
-+++?code=scripts/example02.json&lang=json&title=<h4>Example 02</h4>`scripts/example02.json`
++++?code=scripts/example02.json&lang=json&title=<h4>Example 02</h4>[`scripts/example02.json`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example02.json)
 @[10,12-13,24,36-37,40-41](These lines were edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
 
 +++
@@ -149,10 +149,10 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 ?sen2r
 ```
 
-+++?code=scripts/example03.R&lang=r&title=<h4>Example 03</h4>`scripts/example03.R`
++++?code=scripts/example03.R&lang=r&title=<h4>Example 03</h4>[`scripts/example03.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example03.R)
 (equivalent to example 02)
 
-+++?code=scripts/example03b.R&lang=r&title=`scripts/example03b.R`
++++?code=scripts/example03b.R&lang=r&title=[`scripts/example03b.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example03b.R)
 You can also use a parameter file and change only some parameters
 (useful to launch similar processing chains changing only e.g. the extent)
 
@@ -165,7 +165,7 @@ What is needed:
 - [additional] a JSON parameter file;
 - a cron job.
     
-+++?code=scripts/example04.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>`scripts/example04.R`
++++?code=scripts/example04.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>[`scripts/example04.R`]((https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
 @[8](Search and download the last 5 days)
 @[9](Save a log file to monitor the processing chain)
 
