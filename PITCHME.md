@@ -135,7 +135,7 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 #### Example 02
 
 `/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example02.json`
----?gist=scripts/example_02.json&lang=json&title=scripts/example_02.json
+---?code=scripts/example_02.json&lang=json&title=scripts/example_02.json
 
 @[10,12-13,24,36-37,40-41](These lines were edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
 
