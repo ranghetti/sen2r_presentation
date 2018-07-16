@@ -121,7 +121,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 [@fa[terminal]](http://10.0.1.230:8787)
 
 #### Output
-```
+`
 out_ex01
 ├── BOA
 │   ├── S2A2A_20180711_065_Esempio_BOA_10.tif
@@ -139,7 +139,7 @@ out_ex01
         ├── S2A2A_20180711_065_Esempio_MSAVI_10.jpg.aux.xml
         ├── S2B2A_20180709_108_Esempio_MSAVI_10.jpg
         └── S2B2A_20180709_108_Esempio_MSAVI_10.jpg.aux.xml
-```
+`
 
 ---
 
