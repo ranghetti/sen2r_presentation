@@ -140,7 +140,7 @@ out_ex01
         ├── S2B2A_20180709_108_Esempio_MSAVI_10.jpg
         └── S2B2A_20180709_108_Esempio_MSAVI_10.jpg.aux.xml
 ```
-<img src="S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="drawing" width=200px>https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2B2A_20180709_108_Esempio_BOA_10.jpg</img>
+@[6](<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2B2A_20180709_108_Esempio_BOA_10.jpg" alt="S2A2A_20180711_065_Esempio_BOA_10.jpg" width=200px>)
 
 ---
 
