@@ -156,7 +156,8 @@ out_ex01
 
 `S2mll_yyyymmdd_rrr_ttttt_ppp_rr.fff`
 
-@size[60%](* `S2mll` (length: 5) mission ID (`S2A` or `S2B`) and product level (`1C` or `2A`);)
+<div style="font-size:60%;">
+* `S2mll` (length: 5) mission ID (`S2A` or `S2B`) and product level (`1C` or `2A`);)
 * `yyyymmdd` (length: 8) sensing date (e.g. `20170603` for 2017-06-03);
 * `rrr` relative orbit number (e.g. `022`);
 * `ttttt` tile number (e.g. `32TQQ`);
@@ -167,7 +168,7 @@ out_ex01
     - Name of the index name 
 * `rr` original minimum spatial resolution in metres (10, 20 or 60);
 * `fff` file extension.
-)
+</div>
 
 See also [the documentation](https://ranghetti.github.io/sen2r/reference/s2_shortname.html).
 
