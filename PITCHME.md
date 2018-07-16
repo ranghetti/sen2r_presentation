@@ -121,13 +121,13 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 [@fa[terminal]](http://10.0.1.230:8787)
 
 #### Output
-<tt>
+```
 out_ex01
 ├── BOA
 │   ├── S2A2A_20180711_065_Esempio_BOA_10.tif
 │   ├── S2B2A_20180709_108_Esempio_BOA_10.tif
 │   └── thumbnails
-│       ├── [S2A2A_20180711_065_Esempio_BOA_10.jpg](data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg)
+│       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg
 │       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg.aux.xml
 │       ├── S2B2A_20180709_108_Esempio_BOA_10.jpg
 │       └── S2B2A_20180709_108_Esempio_BOA_10.jpg.aux.xml
@@ -139,7 +139,8 @@ out_ex01
         ├── S2A2A_20180711_065_Esempio_MSAVI_10.jpg.aux.xml
         ├── S2B2A_20180709_108_Esempio_MSAVI_10.jpg
         └── S2B2A_20180709_108_Esempio_MSAVI_10.jpg.aux.xml
-</tt>
+```
+<img src="S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="drawing" width=200px>https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2B2A_20180709_108_Esempio_BOA_10.jpg</img>
 
 ---
 
