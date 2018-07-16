@@ -150,24 +150,22 @@ out_ex01
 @[14]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2A2A_20180711_065_Esempio_MSAVI_10.jpg" alt="S2A2A_20180711_065_Esempio_MSAVI_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2A2A_20180711_065_Esempio_MSAVI_10.jpg))
 @[16]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2B2A_20180709_108_Esempio_MSAVI_10.jpg" alt="S2B2A_20180709_108_Esempio_MSAVI_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2B2A_20180709_108_Esempio_MSAVI_10.jpg))
 
-+++
+---
 
-#### <a name="naming">Naming convention</a>
+#### <a name="naming"></a>Naming convention
 
 `S2mll_yyyymmdd_rrr_ttttt_ppp_rr.fff`
 * `S2mll` (length: 5) mission ID (`S2A` or `S2B`) and product level (`1C` or `2A`);
 * `yyyymmdd` (length: 8) sensing date (e.g. `20170603` for 2017-06-03);
-* `rrr` (length: 3) relative orbit number (e.g. `022`);
-* `ttttt` (length: 5) tile number (e.g. `32TQQ`);
+* `rrr` relative orbit number (e.g. `022`);
+* `ttttt` tile number (e.g. `32TQQ`);
 * `ppp` output product, being one of these:
-    _for level 1C: (length: 3)_
     - `TOA`: 13-bands Top-Of-Atmosphere Reflectance;
-    _for level 2A: (length: 3)_
-    - `BOA`: 13-bands Bottom-Of-Atmosphere Reflectance;
+    - `BOA`: 12-bands Bottom-Of-Atmosphere Reflectance;
     - `TCI`: True Colour Image (3-band RGB 8-bit image);
-    _for indices: (length: variable)_ index name 
-* `rr` (length: 2) priginal minimum spatial resolution in metres (10, 20 or 60);
-* `fff` (length: variable) file extension.
+    - Name of the index name 
+* `rr` original minimum spatial resolution in metres (10, 20 or 60);
+* `fff` file extension.
 
 ---
 
