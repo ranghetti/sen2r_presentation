@@ -320,6 +320,8 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 
 +++?code=file:///home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/lomellina.json&lang=json&title=JSON parameter file
 
++++?code=https://raw.githubusercontent.com/ranghetti/sen2r/master/R/check_sen2r_deps.R&lang=r&title=JSON parameter file
+
 
 
 ---
