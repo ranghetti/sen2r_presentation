@@ -115,8 +115,31 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 @fa[image](Product selection)<br/>[![Sheet 1](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet1_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet1.jpg)   |   @fa[clone](Spatio-temporal selection)<br/>[![Sheet 2](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet2_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet2.jpg)
 @fa[th](Processing options)<br/>[![Sheet 3](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3.jpg)   |   @fa[calculator](Spectral indices selection)<br/>[![Sheet 4](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4.jpg)
 
++++
+
 #### Run example
 [@fa[terminal]](http://10.0.1.230:8787)
+
+#### Output
+```
+out_ex01
+├── BOA
+│   ├── S2A2A_20180711_065_Esempio_BOA_10.tif
+│   ├── S2B2A_20180709_108_Esempio_BOA_10.tif
+│   └── thumbnails
+│       ├── [S2A2A_20180711_065_Esempio_BOA_10.jpg](data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg)
+│       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg.aux.xml
+│       ├── S2B2A_20180709_108_Esempio_BOA_10.jpg
+│       └── S2B2A_20180709_108_Esempio_BOA_10.jpg.aux.xml
+└── MSAVI
+    ├── S2A2A_20180711_065_Esempio_MSAVI_10.tif
+    ├── S2B2A_20180709_108_Esempio_MSAVI_10.tif
+    └── thumbnails
+        ├── S2A2A_20180711_065_Esempio_MSAVI_10.jpg
+        ├── S2A2A_20180711_065_Esempio_MSAVI_10.jpg.aux.xml
+        ├── S2B2A_20180709_108_Esempio_MSAVI_10.jpg
+        └── S2B2A_20180709_108_Esempio_MSAVI_10.jpg.aux.xml
+```
 
 ---
 
