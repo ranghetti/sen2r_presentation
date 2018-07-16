@@ -150,7 +150,7 @@ out_ex01
 @[14]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2A2A_20180711_065_Esempio_MSAVI_10.jpg" alt="S2A2A_20180711_065_Esempio_MSAVI_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2A2A_20180711_065_Esempio_MSAVI_10.jpg))
 @[16]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2B2A_20180709_108_Esempio_MSAVI_10.jpg" alt="S2B2A_20180709_108_Esempio_MSAVI_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2B2A_20180709_108_Esempio_MSAVI_10.jpg))
 
-<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="" height=150px>
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="" height=150px width=200px>
 
 ---
 
