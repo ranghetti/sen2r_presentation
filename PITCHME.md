@@ -118,6 +118,27 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 #### Run example
 [@fa[terminal]](http://10.0.1.230:8787)
 
+#### Output
+```
+out_ex01
+├── BOA
+│   ├── S2A2A_20180711_065_Esempio_BOA_10.tif
+│   ├── S2B2A_20180709_108_Esempio_BOA_10.tif
+│   └── thumbnails
+│       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg
+│       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg.aux.xml
+│       ├── S2B2A_20180709_108_Esempio_BOA_10.jpg
+│       └── S2B2A_20180709_108_Esempio_BOA_10.jpg.aux.xml
+└── MSAVI
+    ├── S2A2A_20180711_065_Esempio_MSAVI_10.tif
+    ├── S2B2A_20180709_108_Esempio_MSAVI_10.tif
+    └── thumbnails
+        ├── S2A2A_20180711_065_Esempio_MSAVI_10.jpg
+        ├── S2A2A_20180711_065_Esempio_MSAVI_10.jpg.aux.xml
+        ├── S2B2A_20180709_108_Esempio_MSAVI_10.jpg
+        └── S2B2A_20180709_108_Esempio_MSAVI_10.jpg.aux.xml
+```
+
 ---
 
 ### 2. Run from an existing parameter file
