@@ -116,7 +116,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 @fa[th](Processing options)<br/>[![Sheet 3](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3.jpg)   |   @fa[calculator](Spectral indices selection)<br/>[![Sheet 4](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4.jpg)
 
 #### Run example
-[@fa[window]](http://10.0.1.230:8787)
+[@fa[window-maximize]](http://10.0.1.230:8787)
 
 +++
 <!-- .slide: style="center: false" -->
@@ -321,8 +321,8 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 +++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=75% auto&position=center&opacity=50
 
 #### <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> chain
-- JSON parameter file: [@fa[file]](file:///home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/lomellina.json)
-- R script: [@fa[file]](file:///home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/update_s2_lomellina.R)
+- JSON parameter file: [@fa[file-code]](file:///home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/lomellina.json)
+- R script: [@fa[file-code]](file:///home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/update_s2_lomellina.R)
 - crontab entry:
 ```bash
   20  5 * * * /usr/bin/Rscript /mnt/nr_working/luigi/code/saturno/sentinel2/update_s2_lomellina.R
