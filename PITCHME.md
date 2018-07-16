@@ -150,14 +150,15 @@ out_ex01
 @[14]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2A2A_20180711_065_Esempio_MSAVI_10.jpg" alt="S2A2A_20180711_065_Esempio_MSAVI_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2A2A_20180711_065_Esempio_MSAVI_10.jpg))
 @[16]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2B2A_20180709_108_Esempio_MSAVI_10.jpg" alt="S2B2A_20180709_108_Esempio_MSAVI_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2B2A_20180709_108_Esempio_MSAVI_10.jpg))
 
+<img src="" alt="null" height=150px>
+
 ---
 
 #### <a name="naming"></a>Naming convention
 
 `S2mll_yyyymmdd_rrr_ttttt_ppp_rr.fff`
 
-<div style="font-size:60%;">
-* `S2mll` (length: 5) mission ID (`S2A` or `S2B`) and product level (`1C` or `2A`);)
+* `S2mll` (length: 5) mission ID (`S2A` or `S2B`) and product level (`1C` or `2A`);
 * `yyyymmdd` (length: 8) sensing date (e.g. `20170603` for 2017-06-03);
 * `rrr` relative orbit number (e.g. `022`);
 * `ttttt` tile number (e.g. `32TQQ`);
@@ -168,7 +169,6 @@ out_ex01
     - Name of the index name 
 * `rr` original minimum spatial resolution in metres (10, 20 or 60);
 * `fff` file extension.
-</div>
 
 See also [the documentation](https://ranghetti.github.io/sen2r/reference/s2_shortname.html).
 
