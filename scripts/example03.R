@@ -4,7 +4,7 @@ data_dir <- "/home/lranghetti/share/git/github/ranghetti/sen2r_presentation/data
 safe_dir <- file.path(data_dir, "safe")
 out_dir <- file.path(data_dir, "out_ex02")
 example_extent <- sf::st_read(file.path(data_dir,"fields_ex.geojson"))
-example_timewindow <- c("2018-07-07","2018-07-11")
+example_timewindow <- c("2018-03-01","2018-09-30")
 
 sen2r(
   gui = FALSE,                         # run without opening the GUI
