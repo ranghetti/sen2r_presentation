@@ -127,7 +127,7 @@ out_ex01
 │   ├── S2A2A_20180711_065_Esempio_BOA_10.tif
 │   ├── S2B2A_20180709_108_Esempio_BOA_10.tif
 │   └── thumbnails
-│       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg
+│       ├── [S2A2A_20180711_065_Esempio_BOA_10.jpg](data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg)
 │       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg.aux.xml
 │       ├── S2B2A_20180709_108_Esempio_BOA_10.jpg
 │       └── S2B2A_20180709_108_Esempio_BOA_10.jpg.aux.xml
