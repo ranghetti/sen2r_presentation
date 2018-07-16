@@ -156,7 +156,7 @@ out_ex01
 
 `S2mll_yyyymmdd_rrr_ttttt_ppp_rr.fff`
 
-@size[75%](
+@size[60%](
 * `S2mll` (length: 5) mission ID (`S2A` or `S2B`) and product level (`1C` or `2A`);
 * `yyyymmdd` (length: 8) sensing date (e.g. `20170603` for 2017-06-03);
 * `rrr` relative orbit number (e.g. `022`);
