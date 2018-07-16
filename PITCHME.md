@@ -318,7 +318,7 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 - Expose them with a geoportal (Get-IT).
 @olend
 
-+++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=75% auto&position=center&opacity=50&?code=file:///home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/lomellina.json&lang=json&title=JSON parameter file
++++?code=file:///home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/lomellina.json&lang=json&title=JSON parameter file
 
 
 
