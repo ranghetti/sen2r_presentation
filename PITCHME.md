@@ -119,6 +119,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 [@fa[terminal]](http://10.0.1.230:8787)
 
 +++
+<!-- .slide: style="layout : top;" -->
 
 #### Output
 ```
