@@ -156,12 +156,12 @@ out_ex01
 
 #### <a name="naming"></a>Naming convention
 
-@color[blue](`S2mll`)`_`
-@color[blue](`yyyymmdd`)`_`
-@color[blue](`rrr`)`_`
-@color[blue](`ttttt`)`_`
-@color[blue](`ppp`)`_`
-@color[blue](`rr`)`.`
+@color[blue](`S2mll`)`_`#
+@color[blue](`yyyymmdd`)`_`#
+@color[blue](`rrr`)`_`#
+@color[blue](`ttttt`)`_`#
+@color[blue](`ppp`)`_`#
+@color[blue](`rr`)`.`#
 @color[blue](`fff`)
 
 @ul
