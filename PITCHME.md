@@ -142,7 +142,7 @@ out_ex01
         └── S2B2A_20180709_108_Esempio_MSAVI_10.jpg.aux.xml
 ```
 @[1,2,10](One subdir for each product (optional))
-@[3-4,11-12](Output images with a [short naming convention](#naming))
+[3-4,11-12](Output images with a [short naming convention](#naming))
 @[1,2,5,10,13](Subfolders with JPEG thumbnails (optional))
 
 @[6]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="S2A2A_20180711_065_Esempio_BOA_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="S2A2A_20180711_065_Esempio_BOA_10.jpg))
@@ -151,6 +151,7 @@ out_ex01
 @[16]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2B2A_20180709_108_Esempio_MSAVI_10.jpg" alt="S2B2A_20180709_108_Esempio_MSAVI_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/MSAVI/thumbnails/S2B2A_20180709_108_Esempio_MSAVI_10.jpg))
 
 ---
+@title[naming]
 
 #### <a name="naming"></a>Naming convention
 
