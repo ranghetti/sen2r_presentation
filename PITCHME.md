@@ -116,7 +116,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 @fa[th](Processing options)<br/>[![Sheet 3](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3.jpg)   |   @fa[calculator](Spectral indices selection)<br/>[![Sheet 4](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4.jpg)
 
 #### Run example
-[View in ![Rstudio logo](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://10.0.1.230:8787)
+[![Rstudio](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://10.0.1.230:8787)
 
 +++
 <!-- .slide: style="center: false" -->
@@ -328,6 +328,7 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 ```bash
   20  5 * * * /usr/bin/Rscript /mnt/nr_working/luigi/code/saturno/sentinel2/update_s2_lomellina.R
 ```
+[![Rstudio](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://10.0.1.230:8787)
 
 #### Get-IT geoportal
 http://saturno.get-it.it/maps/185/view
