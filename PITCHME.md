@@ -156,11 +156,11 @@ out_ex01
 
 #### <a name="naming"></a>Naming convention
 
-@color[blue](`S2mll_yyyymmdd_rrr_ttttt_ppp_rr.fff`)
+@color[blue](`S2mll`)`_`@color[blue](`yyyymmdd`)`_`@color[blue](`rrr`)`_`@color[blue](`ttttt`)`_`@color[blue](`ppp`)`_`@color[blue](`rr`).@color[blue](`fff`)
 
 @ul
-* @color[blue](`S2mll`) (length: 5) mission ID (`S2A` or `S2B`) and product level (`1C` or `2A`);
-* @color[blue](`yyyymmdd`) (length: 8) sensing date (e.g. `20170603` for 2017-06-03);
+* @color[blue](`S2mll`) mission ID (`S2A` or `S2B`) and product level (`1C` or `2A`);
+* @color[blue](`yyyymmdd`) sensing date (e.g. `20170603` for 2017-06-03);
 * @color[blue](`rrr`) relative orbit number (e.g. `022`);
 * @color[blue](`ttttt`) tile number (e.g. `32TQQ`);
 * @color[blue](`ppp`) output product (`TOA`, `BOA`, `TCI`, index name);
