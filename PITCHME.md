@@ -116,7 +116,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 @fa[th](Processing options)<br/>[![Sheet 3](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet3.jpg)   |   @fa[calculator](Spectral indices selection)<br/>[![Sheet 4](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4_small.png)<!-- .element height="70%" -->](https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_gui_sheet4.jpg)
 
 #### Run example
-[@fa[terminal]](http://10.0.1.230:8787)
+[@fa[browser]](http://10.0.1.230:8787)
 
 +++
 <!-- .slide: style="center: false" -->
@@ -318,11 +318,18 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 - Expose them with a geoportal (Get-IT).
 @olend
 
-+++?code=file:///home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/lomellina.json&lang=json&title=JSON parameter file
++++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=75% auto&position=center&opacity=50
 
-+++?code=https://raw.githubusercontent.com/ranghetti/sen2r/master/R/check_sen2r_deps.R&lang=r&title=JSON parameter file
+### <span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> chain
+- JSON parameter file: [@fa[file-code](file:///home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/lomellina.json)
+- R script: [@fa[file-code](file:///home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/update_s2_lomellina.R)
+- crontab entry:
+    ```bash
+      20  5 * * * /usr/bin/Rscript /mnt/nr_working/luigi/code/saturno/sentinel2/update_s2_lomellina.R
+    ```
 
-
+### Get-IT portal
+http://saturno.get-it.it/maps/185/view
 
 ---
 
