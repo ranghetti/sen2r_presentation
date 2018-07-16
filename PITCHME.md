@@ -141,9 +141,9 @@ out_ex01
         ├── S2B2A_20180709_108_Esempio_MSAVI_10.jpg
         └── S2B2A_20180709_108_Esempio_MSAVI_10.jpg.aux.xml
 ```
-@[2,10](One subdir for each product (optional))
-@[3-4,11-12](Output images with a short naming convention)
-@[5,13](Subfolders with JPEG thumbnails (optional))
+@[1,2,10](One subdir for each product (optional))
+@[3-4,11-12](Output images with a [short naming convention](#naming))
+@[1,2,5,10,13](Subfolders with JPEG thumbnails (optional))
 
 @[6]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="S2A2A_20180711_065_Esempio_BOA_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="S2A2A_20180711_065_Esempio_BOA_10.jpg))
 @[8]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2B2A_20180709_108_Esempio_BOA_10.jpg" alt="S2B2A_20180709_108_Esempio_BOA_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2B2A_20180709_108_Esempio_BOA_10.jpg))
@@ -152,21 +152,22 @@ out_ex01
 
 +++
 
-#### Naming convention
+#### <a name="naming">Naming convention</a>
 
 `S2mll_yyyymmdd_rrr_ttttt_ppp_rr.fff`
-* `S2mll` (length: 5) shows the mission ID (`S2A` or `S2B`) and the product level (`1C` or `2A`);
-* `yyyymmdd` (length: 8) is the sensing date (e.g. `20170603` for 2017-06-03) ; the hour is skipped, since a single sensor can not pass two times in a day on the same tile);
-* `rrr` (length: 3) is the relative orbit number (e.g. `022`);
-* `ttttt` (length: 5) is the tile number (e.g. `32TQQ`);
-* `ppp` (length: 3) is the output product, being one of these:
-    _for level 1C:_
+* `S2mll` (length: 5) mission ID (`S2A` or `S2B`) and product level (`1C` or `2A`);
+* `yyyymmdd` (length: 8) sensing date (e.g. `20170603` for 2017-06-03);
+* `rrr` (length: 3) relative orbit number (e.g. `022`);
+* `ttttt` (length: 5) tile number (e.g. `32TQQ`);
+* `ppp` output product, being one of these:
+    _for level 1C: (length: 3)_
     - `TOA`: 13-bands Top-Of-Atmosphere Reflectance;
-    _for level 2A:_
+    _for level 2A: (length: 3)_
     - `BOA`: 13-bands Bottom-Of-Atmosphere Reflectance;
     - `TCI`: True Colour Image (3-band RGB 8-bit image);
-* `rr` (length: 2) is the original minimum spatial resolution in metres (10, 20 or 60);
-* `fff` (length: variable, generally 3) is the file extension.
+    _for indices: (length: variable)_ index name 
+* `rr` (length: 2) priginal minimum spatial resolution in metres (10, 20 or 60);
+* `fff` (length: variable) file extension.
 
 ---
 
