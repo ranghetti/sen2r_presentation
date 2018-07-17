@@ -84,7 +84,7 @@ sen2r:::load_binpaths(c("python", "wget", "aria2c", "gdal", "sen2cor"))
 @[1](graphical mode)
 @[3](automatic mode)
 
-A <span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> Docker container with all the required dependencies will be created soon.
+*A <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> Docker container with all the required dependencies will be created soon.*
 
 ---
 
