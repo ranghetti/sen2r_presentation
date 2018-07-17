@@ -287,6 +287,18 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 `gdal_warp()` | [Clip, reproject and warp raster files](https://ranghetti.github.io/sen2r/reference/gdal_warp.html)
 `s2_mask()` | [Apply cloud masks](https://ranghetti.github.io/sen2r/reference/s2_mask.html)
 `s2_calcindices()` | [Compute maps of spectral indices](https://ranghetti.github.io/sen2r/reference/s2_calcindices.html)
+`s2_thumbnails()` | [Create thumbnails for S2 products](https://ranghetti.github.io/sen2r/reference/s2_thumbnails.html)
+
++++
+
+### [Manage file names and metadata](https://ranghetti.github.io/sen2r/reference/index.html#manage-file-names-and-metadata)
+
+| | |
+---|---
+`s2_getMetadata()` | [Get information from S2 file name or metadata](https://ranghetti.github.io/sen2r/reference/s2_getMetadata.html)
+`s2_shortname()` | [Rename products using a shorten convention](https://ranghetti.github.io/sen2r/reference/s2_shortname.html)
+`fs2nc_getElements()` | [Get information from S2 short name](https://ranghetti.github.io/sen2r/reference/fs2nc_getElements.html)
+`s2_dop()` | [Return the Dates Of Passage over some orbits](https://ranghetti.github.io/sen2r/reference/s2_dop.html)
 
 ---?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/263.jpg&size=cover&opacity=50
 
