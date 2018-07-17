@@ -191,7 +191,7 @@ You can also use a parameter file and change only some parameters
 ---?code=data/out_ex02/tree.txt&lang=none&title=<h4>Output</h4>
 <div style="position:fixed;width:75%;left:50%;margin-left:-37.5%;bottom:0%">![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex02/S2_Esempio_MSAVI_10.gif)</div>
 
- <div style='position:fixed;height:75%;bottom:50%;margin-bottom:-37.5%;left:75%;'>
+ <div style='position:fixed;height:75%;bottom:50%;margin-bottom:-37.5%;left:75%;margin-left:25;%;'>
    ![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex02/S2_Esempio_MSAVI_10.gif)
  </div>
 
