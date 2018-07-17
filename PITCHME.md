@@ -217,9 +217,9 @@ You can also use a parameter file and change only some parameters
 #### Time series
 <iframe height="500" width = "900" src="https://plot.ly/~ranghetti/3.embed"></iframe>
 
-#### Raster stack
-
 +++
+
+#### Raster stack
 
 +++?code=scripts/example04.R&lang=r&title=<h4>Code to produce the plots</h4>[`scripts/example04.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
 
