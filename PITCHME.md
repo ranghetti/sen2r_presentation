@@ -118,29 +118,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 #### Run example
 [![Rstudio](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://10.0.1.230:8787)
 
-+++
-<!-- .slide: style="center: false" -->
-
-#### Output
-```
-out_ex01
-├── BOA
-│   ├── S2A2A_20180711_065_Esempio_BOA_10.tif
-│   ├── S2B2A_20180709_108_Esempio_BOA_10.tif
-│   └── thumbnails
-│       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg
-│       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg.aux.xml
-│       ├── S2B2A_20180709_108_Esempio_BOA_10.jpg
-│       └── S2B2A_20180709_108_Esempio_BOA_10.jpg.aux.xml
-└── MSAVI
-    ├── S2A2A_20180711_065_Esempio_MSAVI_10.tif
-    ├── S2B2A_20180709_108_Esempio_MSAVI_10.tif
-    └── thumbnails
-        ├── S2A2A_20180711_065_Esempio_MSAVI_10.jpg
-        ├── S2A2A_20180711_065_Esempio_MSAVI_10.jpg.aux.xml
-        ├── S2B2A_20180709_108_Esempio_MSAVI_10.jpg
-        └── S2B2A_20180709_108_Esempio_MSAVI_10.jpg.aux.xml
-```
++++?code=data/out_ex01/tree.txt&lang=none&title=<h4>Output</h4>
 @[1,2,10](One subdir for each product (optional))
 @[3-4,11-12](Output images with a short naming convention)
 @[1,2,5,10,13](Subfolders with JPEG thumbnails (optional))
@@ -212,6 +190,21 @@ You can also use a parameter file and change only some parameters
 
 ---
 
++++?code=data/out_ex02/tree.txt&lang=none&title=<h4>Output</h4>
+[<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="S2A2A_20180711_065_Esempio_BOA_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg)
+
+#### Time series
+<iframe height="500" width = "900" src="https://plot.ly/~ranghetti/3.embed"></iframe>
+
++++
+
+#### Raster stack
+
++++?code=scripts/example04.R&lang=r&title=<h4>Code to produce the plots</h4>[`scripts/example04.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
+
+
+---
+
 ## Schedule a daily download
 
 What is needed:
@@ -219,7 +212,7 @@ What is needed:
 - [additional] a JSON parameter file;
 - a cron job.
     
-+++?code=scripts/example04.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>[`scripts/example04.R`]((https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
++++?code=scripts/example05.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>[`scripts/example05.R`]((https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example05.R)
 @[8](Search and download the last 5 days)
 @[9](Save a log file to monitor the processing chain)
 
@@ -258,7 +251,7 @@ crontab -e
 # m h  dom mon dow   command
 
 # Sentinel-2 example cron job
-  20  0 * * * /usr/bin/Rscript /home/lranghetti/share/git/github/ranghetti/sen2r_presentation/scripts/example04.R
+  20  0 * * * /usr/bin/Rscript /home/lranghetti/share/git/github/ranghetti/sen2r_presentation/scripts/example05.R
 ```
 @[23,26](Now the job is scheduled to run every day at 0:20)
 
