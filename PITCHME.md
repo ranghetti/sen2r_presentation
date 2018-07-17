@@ -118,29 +118,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 #### Run example
 [![Rstudio](https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-125.png)](http://10.0.1.230:8787)
 
-+++
-<!-- .slide: style="center: false" -->
-
-#### Output
-```
-out_ex01
-├── BOA
-│   ├── S2A2A_20180711_065_Esempio_BOA_10.tif
-│   ├── S2B2A_20180709_108_Esempio_BOA_10.tif
-│   └── thumbnails
-│       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg
-│       ├── S2A2A_20180711_065_Esempio_BOA_10.jpg.aux.xml
-│       ├── S2B2A_20180709_108_Esempio_BOA_10.jpg
-│       └── S2B2A_20180709_108_Esempio_BOA_10.jpg.aux.xml
-└── MSAVI
-    ├── S2A2A_20180711_065_Esempio_MSAVI_10.tif
-    ├── S2B2A_20180709_108_Esempio_MSAVI_10.tif
-    └── thumbnails
-        ├── S2A2A_20180711_065_Esempio_MSAVI_10.jpg
-        ├── S2A2A_20180711_065_Esempio_MSAVI_10.jpg.aux.xml
-        ├── S2B2A_20180709_108_Esempio_MSAVI_10.jpg
-        └── S2B2A_20180709_108_Esempio_MSAVI_10.jpg.aux.xml
-```
++++?code=data/out_ex01/tree.txt&lang=none&title=<h4>Output</h4>
 @[1,2,10](One subdir for each product (optional))
 @[3-4,11-12](Output images with a short naming convention)
 @[1,2,5,10,13](Subfolders with JPEG thumbnails (optional))
@@ -212,7 +190,8 @@ You can also use a parameter file and change only some parameters
 
 ---
 
-### Output 
++++?code=data/out_ex02/tree.txt&lang=none&title=<h4>Output</h4>
+[<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="S2A2A_20180711_065_Esempio_BOA_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg)
 
 #### Time series
 <iframe height="500" width = "900" src="https://plot.ly/~ranghetti/3.embed"></iframe>
