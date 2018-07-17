@@ -355,4 +355,4 @@ In case of errors, you are welcome to [open a new issue on GitHub](https://githu
 
 [<img src="https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_logo_1000px.png" width=400px>](https://github.com/ranghetti/sen2r)
 
-@color[white](## Thank you for attention)
+@color[white](<h2>Thank you for attention</h2>)
