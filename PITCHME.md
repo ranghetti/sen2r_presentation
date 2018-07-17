@@ -293,7 +293,7 @@ Functions used by `sen2r()` to perform specific steps, and which can be used ind
 `s2_mask()` | [Apply cloud masks](https://ranghetti.github.io/sen2r/reference/s2_mask.html)
 `s2_calcindices()` | [Compute maps of spectral indices](https://ranghetti.github.io/sen2r/reference/s2_calcindices.html)
 
----
+---?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/263.jpg&size=cover&opacity=50
 
 ## An example from SATURNO project
 
