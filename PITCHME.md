@@ -353,6 +353,6 @@ In case of errors, you are welcome to [open a new issue on GitHub](https://githu
 
 ---?video=https://dlmultimedia.esa.int/download/public/videos/2014/10/038/orig-1410_038_AR_EN.mp4
 
-<img src="https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_logo_1000px.png" width=400px>
+[<img src="https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_logo_1000px.png" width=400px>](https://github.com/ranghetti/sen2r)
 
-@color[white](@size[150%](Thank you for attention))
+@color[white](## Thank you for attention)
