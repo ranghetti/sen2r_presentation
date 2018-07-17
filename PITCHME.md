@@ -353,4 +353,4 @@ In case of errors, you are welcome to [open a new issue on GitHub](https://githu
 
 ---?video=https://dlmultimedia.esa.int/download/public/videos/2014/10/038/orig-1410_038_AR_EN.mp4
 
-Thank you for attention
+@color[white](@size[150%](Thank you for attention))
