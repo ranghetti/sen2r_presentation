@@ -20,7 +20,7 @@
   "mask_smooth": [100],
   "mask_buffer": [100],
   "clip_on_extent": [true],
-  "extent_as_mask": [true],
+  "extent_as_mask": [false],
   "extent_name": ["Esempio"],
   "reference_path": [null],
   "res": [null],

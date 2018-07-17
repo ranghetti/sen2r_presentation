@@ -11,6 +11,7 @@ sen2r(
   timewindow = example_timewindow,
   extent = example_extent,
   extent_name = "Esempio",
+  extent_as_mask = FALSE,
   s2tiles_selected = NA,
   path_l1c = safe_dir,
   path_l2a = safe_dir,

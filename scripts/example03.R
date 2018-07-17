@@ -13,7 +13,6 @@ sen2r(
   timewindow = example_timewindow,     # define the time window
   extent = example_extent,             # set the desired extent
   extent_name = "Esempio",             # set the name (used in output files)
-  extent_as_mask = TRUE,               # clip on the input polygon,
   list_prods = "BOA",                  # produce Surface Reflectance
   list_indices = c("MSAVI"),           # produce these spectral indices
   mask_type = "cloud_medium_proba",    # define a cloud mask
