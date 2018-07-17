@@ -58,8 +58,6 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 
 ## Installation
 
-### Standard installation
-
 1. install the package **devtools**
     ```r
     install.packages("devtools")
@@ -86,10 +84,7 @@ sen2r:::load_binpaths(c("python", "wget", "aria2c", "gdal", "sen2cor"))
 @[1](graphical mode)
 @[3](automatic mode)
 
----
-
-### Docker installation
-TODO
+A <span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> Docker container with all the required dependencies will be created soon.
 
 ---
 
