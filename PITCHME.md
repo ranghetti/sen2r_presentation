@@ -189,7 +189,9 @@ You can also use a parameter file and change only some parameters
 (useful to launch similar processing chains changing only e.g. the extent)
 
 ---?code=data/out_ex02/tree.txt&lang=none&title=<h4>Output</h4>
-<div style="position:fixed;width:75%;left:50%;margin-left:-37.5%;">![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg)</div>
+<div style="position:fixed;width:75%;left:50%;margin-left:-37.5%;bottom:0%">![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg)</div>
+
++++
 
 #### Time series
 <iframe height="500" width = "900" src="https://plot.ly/~ranghetti/3.embed"></iframe>
