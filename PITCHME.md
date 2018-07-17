@@ -1,4 +1,4 @@
----?video=https://dlmultimedia.esa.int/download/public/videos/2015/04/008/1504_008_AR_EN.mp4
+---?video=https://dlmultimedia.esa.int/download/public/videos/2015/04/008/orig-1504_008_AR_EN.mp4
 @title[Fullscreen Video]
 
 @snap[north-east]
