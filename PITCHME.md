@@ -188,10 +188,8 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 You can also use a parameter file and change only some parameters
 (useful to launch similar processing chains changing only e.g. the extent)
 
----
-
-+++?code=data/out_ex02/tree.txt&lang=none&title=<h4>Output</h4>
-[<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="S2A2A_20180711_065_Esempio_BOA_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg)
+---?code=data/out_ex02/tree.txt&lang=none&title=<h4>Output</h4>
+[<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="S2A2A_20180711_065_Esempio_BOA_10.jpg" height=250px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg)
 
 #### Time series
 <iframe height="500" width = "900" src="https://plot.ly/~ranghetti/3.embed"></iframe>
