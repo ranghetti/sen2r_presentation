@@ -212,6 +212,10 @@ You can also use a parameter file and change only some parameters
 
 ---?code=scripts/example04.R&lang=r&title=<h3>Output time series</h3>[`scripts/example04.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
 
++++
+
+<iframe src="https://plot.ly/~ranghetti/3.embed" width="950" height="700" frameborder="1" allowfullscreen="allowfullscreen"></iframe>
+
 ---
 
 ## Schedule a daily download
@@ -260,7 +264,7 @@ crontab -e
 # m h  dom mon dow   command
 
 # Sentinel-2 example cron job
-  20  0 * * * /usr/bin/Rscript /home/lranghetti/share/git/github/ranghetti/sen2r_presentation/scripts/example04.R
+  20  0 * * * /usr/bin/Rscript /home/lranghetti/share/git/github/ranghetti/sen2r_presentation/scripts/example05.R
 ```
 @[23,26](Now the job is scheduled to run every day at 0:20)
 
