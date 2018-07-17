@@ -345,9 +345,11 @@ http://saturno.get-it.it/maps/185/view
 
 ### Test the package
 
-You can be the beta-testers!
+You can be the beta testers!
 
 In case of errors, you are welcome to [open a new issue on GitHub](https://github.com/ranghetti/sen2r/issues)
 *(anche in italiano)*.
+
+![](https://www.appelmo.com/wp-content/uploads/2016/08/come-guadagnare-come-beta-tester-1.jpg)
 
 
