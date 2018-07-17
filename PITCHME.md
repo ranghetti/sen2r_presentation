@@ -210,6 +210,8 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 You can also use a parameter file and change only some parameters
 (useful to launch similar processing chains changing only e.g. the extent)
 
+---?code=scripts/example05.R&lang=r&title=<h3>Output time series</h3>[`scripts/example04.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
+
 ---
 
 ## Schedule a daily download
@@ -219,7 +221,7 @@ What is needed:
 - [additional] a JSON parameter file;
 - a cron job.
     
-+++?code=scripts/example04.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>[`scripts/example04.R`]((https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
++++?code=scripts/example05.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>[`scripts/example05.R`]((https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example05.R)
 @[8](Search and download the last 5 days)
 @[9](Save a log file to monitor the processing chain)
 
