@@ -189,7 +189,7 @@ You can also use a parameter file and change only some parameters
 (useful to launch similar processing chains changing only e.g. the extent)
 
 ---?code=data/out_ex02/tree.txt&lang=none&title=<h4>Output</h4>
-<div style="position:fixed;width:75%;left:75%;margin-left:-52.5%;bottom:0%">![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex02/S2_Esempio_MSAVI_10.gif)</div>
+<div style="position:fixed;width:75%;left:100%;margin-left:-67.5%;bottom:0%">![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex02/S2_Esempio_MSAVI_10.gif)</div>
 
 +++
 
