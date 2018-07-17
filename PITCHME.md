@@ -35,15 +35,19 @@
 - Automate creation of time series of Sentinel-2 images over areas of interest
 @ulend
 
+---?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
+
+### What <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is
+
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
 
 ### What <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is for
 @ul
-- download Sentinel-2 images (Level-1C or 2A) matching input conditions;
+- download Sentinel-2 images (Level-1C or 2A) matching input conditions (type of product, dates, geo extent, cloudines...;
 - apply [sen2cor](http://step.esa.int/main/third-party-plugins-2/sen2cor) to atmospherically correct Level-1C products;
 - perform geometric manipulation of images (clip, rescale, reproject, merge contiguous tiles, etc.);
 - apply a cloud mask;
-- produce spectral indices;
+- compute and save spectral indices;
 - obtain output products in easier-to use file formats (e.g. GeoTIFF), managed by GDAL .
 @ulend
 
@@ -59,7 +63,7 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 
 ### What <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is **not** for
 @ul
-- interactively search specific products<br/>([&rightarrow; Copernicus Open Hub](https://scihub.copernicus.eu/dhus));
+- interactively search the S2 archive for specific images<br/>([&rightarrow; Copernicus Open Hub](https://scihub.copernicus.eu/dhus));
 - download products through a user-friendly interface<br/>(&rightarrow; GeoGrabber);
 - interactively perform processing operations on specific images<br/>([&rightarrow; ESA SNAP](http://step.esa.int/main/toolboxes/snap)).
 @ulend
@@ -124,7 +128,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 
 +++?code=data/out_ex01/tree.txt&lang=none&title=<h4>Output</h4>
 @[1,2,10](One subdir for each product (optional))
-@[3-4,11-12](Output images with a short naming convention)
+@[3-4,11-12](Output images with easy to understand naming convention)
 @[1,2,5,10,13](Subfolders with JPEG thumbnails (optional))
 
 @[6]([<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg" alt="S2A2A_20180711_065_Esempio_BOA_10.jpg" height=150px>](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex01/BOA/thumbnails/S2A2A_20180711_065_Esempio_BOA_10.jpg))
@@ -146,7 +150,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 * @color[blue](`rrr`) relative orbit number (e.g. `022`);
 * @color[blue](`ttttt`) tile number (e.g. `32TQQ`);
 * @color[blue](`ppp`) output product (`TOA`, `BOA`, `TCI`, index name);
-* @color[blue](`rr`) original minimum spatial resolution in metres (10, 20 or 60);
+* @color[blue](`rr`) spatial resolution in metres (10, 20 or 60);
 * @color[blue](`fff`) file extension.
 @ulend
 
@@ -220,7 +224,7 @@ You can also use a parameter file and change only some parameters
 
 What is needed:
 - a R script to run;
-- [additional] a JSON parameter file;
+- a JSON parameter file [optional] ;
 - a cron job.
     
 +++?code=scripts/example05.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>[`scripts/example05.R`]((https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example05.R)
@@ -330,8 +334,8 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
     <li>Clip on the Lomellina extent and mask the non arable land;</li>
     <li>Mask the cloud-covered surface (with a buffer over clouds);</li>
     <li>Compute NDRE index.</li></ul>
-- Load images on a Geoserver;
-- Expose them with a geoportal (Get-IT).
+- Upload images on a Geoserver;
+- Deploy them within a geoportal (Get-IT).
 @olend
 
 +++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=75% auto&position=center&opacity=50
