@@ -5,3 +5,4 @@ logo-position : top-right
 slide-number : true
 theme-override : assets/css/PITCHME.css
 published : false
+loop : true
