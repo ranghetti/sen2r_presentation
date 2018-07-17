@@ -216,8 +216,10 @@ You can also use a parameter file and change only some parameters
 
 #### Raster stack
 
++++
+
 #### Time series
-<iframe src="https://plot.ly/~ranghetti/3.embed"></iframe>
+<iframe height="600" src="https://plot.ly/~ranghetti/3.embed"></iframe>
 
 +++?code=scripts/example04.R&lang=r&title=<h3>Output time series</h3>[`scripts/example04.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
 
