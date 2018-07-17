@@ -31,12 +31,20 @@
 
 ### What <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is for
 @ul
+- Facilitate download and preprocessing of Sentinel-2 images;
+- Automate creation of time series of Sentinel-2 images over areas of interest
+@ulend
+
++++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
+
+### What <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is for
+@ul
 - download Sentinel-2 images (Level-1C or 2A) matching input conditions;
 - apply [sen2cor](http://step.esa.int/main/third-party-plugins-2/sen2cor) to atmospherically correct Level-1C products;
-- perform geometric manupulation of images (clip, rescale, reproject, merge contiguous tiles, etc.);
+- perform geometric manipulation of images (clip, rescale, reproject, merge contiguous tiles, etc.);
 - apply a cloud mask;
 - produce spectral indices;
-- obtain output prodicts in file formats managed by GDAL (e.g. GeoTIFF).
+- obtain output products in easier-to use file formats (e.g. GeoTIFF), managed by GDAL .
 @ulend
 
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
