@@ -210,11 +210,17 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 You can also use a parameter file and change only some parameters
 (useful to launch similar processing chains changing only e.g. the extent)
 
----?code=scripts/example04.R&lang=r&title=<h3>Output time series</h3>[`scripts/example04.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
+---
 
-+++
+### Output 
 
-<iframe src="https://plot.ly/~ranghetti/3.embed" width="950" height="700" frameborder="1" allowfullscreen="allowfullscreen"></iframe>
+#### Raster stack
+
+#### Time series
+<iframe src="https://plot.ly/~ranghetti/3.embed"></iframe>
+
++++?code=scripts/example04.R&lang=r&title=<h3>Output time series</h3>[`scripts/example04.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
+
 
 ---
 
