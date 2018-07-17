@@ -336,7 +336,7 @@ http://saturno.get-it.it/maps/185/view
 ---
 
 ## Work in progress!
-- [[#80](https://github.com/ranghetti/sen2r/issues/80)] Add [THEIA images](http://www.theia-land.fr/en/products/sentinel-2-surface-reflectance) as possible sources (atmospheric correction with [MACCS-MAJA](http://www.cesbio.ups-tlse.fr/multitemp/?p=6203) processor);
+- Add [THEIA images](http://www.theia-land.fr/en/products/sentinel-2-surface-reflectance) as possible sources (atmospheric correction with [MACCS-MAJA](http://www.cesbio.ups-tlse.fr/multitemp/?p=6203) processor);
 - improve user experience (GUI interface, documentation, logging);
 - several bug fixes (users can report them on [GitHub](https://github.com/ranghetti/sen2r/issues));
 - publish a stable version on [CRAN](https://cran.r-project.org).
