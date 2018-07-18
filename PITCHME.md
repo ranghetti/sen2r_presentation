@@ -3,14 +3,14 @@
 <h1>@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an R toolbox <br/>to find, download <br/>and preprocess <br/>Sentinel-2 data )</h1>
 @snapend
 
+@snap[south-west]
+![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=5&data=https://gitpitch.com/ranghetti/sen2r_presentation)
+@snapend 
+
 @snap[north-west]
 ![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/assets/img/logo_irea_200px.png)
 <h3><span style="color:white;">Luigi Ranghetti</span></h3>
 <h4><span style="color:white;">CNR-IREA, 2018-07-19</span></h4>
-@snapend 
-
-@snap[south-west]
-![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=5&data=https://gitpitch.com/ranghetti/sen2r_presentation)
 @snapend 
 
 
@@ -44,9 +44,9 @@
 
 <img src="https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_logo_1000px.png" width=400px>
 
-<span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is an **@color[2f66d5](R)** package with the aims to:
+<span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is an **@color[#2f66d5](R)** package with the aims to:
 @ul
-- provide **@color[2f66d5](R)** functions to *semi-automatically* perform recurrent processing operations on Sentinel-2 products;
+- provide **@color[#2f66d5](R)** functions to *semi-automatically* perform recurrent processing operations on Sentinel-2 products;
 - facilitate the creation and automatic update of time series of Sentinel-2 images over areas of interest.
 @ulend
 
