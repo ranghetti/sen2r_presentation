@@ -2,7 +2,7 @@
 @title[sen2r presentation @IREA, 2018-07-19]
 
 @snap[south-east]
-<h1>@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an R toolbox <br/>to find, download <br/>and preprocess <br/>Sentinel-2 data )</h1>
+<h1>@color[white](@size[150%](<span style="vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an **R** toolbox <br/>to find, download <br/>and preprocess <br/>Sentinel-2 data )</h1>
 @snapend
 
 @snap[south-west]
@@ -64,7 +64,7 @@
 - obtain output products in easier-to use file formats (e.g. GeoTIFF), managed by GDAL .
 @ulend
 
-_Target_: data scientists with basic skills on R and geoprocessing.
+_Target_: data scientists with basic skills on **@color[#2f66d5](R)** and geoprocessing.
 
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
 
@@ -171,7 +171,7 @@ See also [the documentation](https://ranghetti.github.io/sen2r/reference/safe_sh
 ---
 
 ### 2. Run from an existing parameter file
-Launch it from R commandline:
+Launch it from **@color[#2f66d5](R)** commandline:
 ```r
 sen2r("/path/of/the/existing/parameter_file.json")
 ```
@@ -194,7 +194,7 @@ sen2r("/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example02.json")
 
 ---
 
-### 3. Launch as R function, using function arguments
+### 3. Launch as **@color[#2f66d5](R)** function, using function arguments
 See the [documentation of the function](https://ranghetti.github.io/sen2r/reference/sen2r.html):
 ```r
 ?sen2r
@@ -234,7 +234,7 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 ## Schedule a daily download
 
 What is needed:
-- a R script to run;
+- an **@color[#2f66d5](R)** script to run;
 - a JSON parameter file [optional] ;
 - a cron scheduler.
     
