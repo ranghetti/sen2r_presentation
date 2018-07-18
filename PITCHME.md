@@ -19,6 +19,8 @@
 
 ## Introduction
 
+![](https://dlmultimedia.esa.int/download/public/videos/2016/08/004/1608_004_AR_EN.mp4)
+
 ### Sentinel-2 data
 - Sentinel-2A available from July 2015 (revisiting time: 10 day);
 - Sentinel-2B available from July 2017 (joint revisiting time: 5 days);
