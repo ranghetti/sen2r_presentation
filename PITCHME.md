@@ -8,7 +8,7 @@
 @snapend 
 
 @snap[north-west]
-![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/assets/img/logo_irea_200px.png)
+![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/assets/img/logo_irea_150px.png)
 <h3><span style="color:white;">Luigi Ranghetti</span></h3>
 <h4><span style="color:white;">CNR-IREA, 2018-07-19</span></h4>
 @snapend 
