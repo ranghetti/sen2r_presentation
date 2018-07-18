@@ -192,7 +192,7 @@ sen2r("/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example02.json")
 
 ---
 
-### 3. Launch as **@color[#2f66d5](R)** function, using function arguments
+### 3. Launch as @color[#2f66d5](R) function, using function arguments
 See the [documentation of the function](https://ranghetti.github.io/sen2r/reference/sen2r.html):
 ```r
 ?sen2r
