@@ -4,4 +4,5 @@ logo : assets/img/logo_sen2r_irea_400px.png
 logo-position : top-right
 slide-number : true
 theme-override : assets/css/PITCHME.css
+footnote : "sen2r: an R toolbox to find, download and preprocess Sentinel-2 data. Luigi Ranghetti, CNR-IREA, 2018-07-19. CC BY-SA 4.0"
 published : false
