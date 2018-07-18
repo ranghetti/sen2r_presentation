@@ -29,6 +29,7 @@
 @title[Revisiting time]
 
 - short [revisiting time](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/revisit-coverage)
+
     (from July 2017: 5-days or less for cloudly-free areas)
     ![](https://sentinel.esa.int/documents/247904/3394924/Figure-2.jpg)
 
