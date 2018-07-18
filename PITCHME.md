@@ -19,11 +19,14 @@
 
 ## Introduction
 
-![](https://dlmultimedia.esa.int/download/public/videos/2016/08/004/1608_004_AR_EN.mp4)
-
 ### Sentinel-2 data
 - Sentinel-2A available from July 2015 (revisiting time: 10 day);
 - Sentinel-2B available from July 2017 (joint revisiting time: 5 days);
+
+<video width="320" height="240" controls>
+  <source src="https://dlmultimedia.esa.int/download/public/videos/2016/08/004/1608_004_AR_EN.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
 
