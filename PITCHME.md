@@ -1,6 +1,7 @@
 ---?video=https://dlmultimedia.esa.int/download/public/videos/2015/04/008/orig-1504_008_AR_EN.mp4
 @snap[south-east]
-<h1>@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an R toolbox <br/>to find, download <br/>and preprocess <br/>Sentinel-2 data )</h1>
+<h1>@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an R toolbox <br/>
+    to find, download <br/>and preprocess <br/>Sentinel-2 data )</h1>
 @snapend
 
 @snap[south-west]
@@ -162,7 +163,7 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 
 E.g. `S2A2A_20180711_065_Esempio_BOA_10.jpg`
 
-See also [the documentation](https://ranghetti.github.io/sen2r/reference/s2_shortname.html).
+See also [the documentation](https://ranghetti.github.io/sen2r/reference/safe_shortname.html).
 
 
 ---
@@ -202,7 +203,7 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 +++?code=scripts/example03b.R&lang=r&title=<p>You can also use a parameter file and change only some parameters</p>[`scripts/example03b.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example03b.R)
 @[3-7](Build the archive)
 @[9-18](Do the same processing on a different area of interest)
-@[20-28](useful to launch similar processing chains changing only e.g. the extent)
+@[20-28](Change some other processing parameters)
 
 
 ---?code=data/out_ex02/tree.txt&lang=none&title=<h4>Output</h4>
@@ -280,44 +281,6 @@ crontab -e
 On Windows, use the [Task Scheduler](https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page)
 ![Task Scheduler screenshot](https://i.stack.imgur.com/Aqa57.png)
 
----
-
-## Intermediate functions
-Functions used by `sen2r()` to perform specific steps, and which can be used individually:
-
-+++
-
-### [Find and download Sentinel-2 products](https://ranghetti.github.io/sen2r/reference/index.html#section-find-and-download-sentinel-products)
-| | |
----|---
-`s2_list()` | [Retrieve list of available products.](https://ranghetti.github.io/sen2r/reference/s2_list.html)
-`s2_download()` | [Download S2 products.](https://ranghetti.github.io/sen2r/reference/s2_download.html)
-`sen2cor()` | [Correct L1C products using sen2cor](https://ranghetti.github.io/sen2r/reference/sen2cor.html)
-
-+++
-
-### [Read and convert SAFE format](https://ranghetti.github.io/sen2r/reference/index.html#section-read-and-convert-safe-format)
-
-| | |
----|---
-`s2_getMetadata()` | [Get information from S2 file name or metadata](https://ranghetti.github.io/sen2r/reference/s2_getMetadata.html)
-`s2_translate()` | [Convert from SAFE format](https://ranghetti.github.io/sen2r/reference/s2_translate.html)
-`s2_merge()` | [Merge S2 tiles with the same date and orbit](https://ranghetti.github.io/sen2r/reference/s2_merge.html)
-`gdal_warp()` | [Clip, reproject and warp raster files](https://ranghetti.github.io/sen2r/reference/gdal_warp.html)
-`s2_mask()` | [Apply cloud masks](https://ranghetti.github.io/sen2r/reference/s2_mask.html)
-`s2_calcindices()` | [Compute maps of spectral indices](https://ranghetti.github.io/sen2r/reference/s2_calcindices.html)
-`s2_thumbnails()` | [Create thumbnails for S2 products](https://ranghetti.github.io/sen2r/reference/s2_thumbnails.html)
-
-+++
-
-### [Manage file names and metadata](https://ranghetti.github.io/sen2r/reference/index.html#manage-file-names-and-metadata)
-
-| | |
----|---
-`s2_getMetadata()` | [Get information from S2 file name or metadata](https://ranghetti.github.io/sen2r/reference/s2_getMetadata.html)
-`s2_shortname()` | [Rename products using a shorten convention](https://ranghetti.github.io/sen2r/reference/s2_shortname.html)
-`fs2nc_getElements()` | [Get information from S2 short name](https://ranghetti.github.io/sen2r/reference/fs2nc_getElements.html)
-`s2_dop()` | [Return the Dates Of Passage over some orbits](https://ranghetti.github.io/sen2r/reference/s2_dop.html)
 
 ---?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/263.jpg&size=cover&opacity=50
 
@@ -357,6 +320,46 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 
 #### Get-IT geoportal
 http://saturno.get-it.it/maps/185/view
+
+
+---
+
+## Intermediate functions
+Functions used by `sen2r()` to perform specific steps, and which can be used individually.
+
++++
+
+### [Find and download Sentinel-2 products](https://ranghetti.github.io/sen2r/reference/index.html#section-find-and-download-sentinel-products)
+| | |
+---|---
+`s2_list()` | [Retrieve list of available products.](https://ranghetti.github.io/sen2r/reference/s2_list.html)
+`s2_download()` | [Download S2 products.](https://ranghetti.github.io/sen2r/reference/s2_download.html)
+`sen2cor()` | [Correct L1C products using sen2cor](https://ranghetti.github.io/sen2r/reference/sen2cor.html)
+
++++
+
+### [Read and convert SAFE format](https://ranghetti.github.io/sen2r/reference/index.html#section-read-and-convert-safe-format)
+
+| | |
+---|---
+`s2_translate()` | [Convert from SAFE format](https://ranghetti.github.io/sen2r/reference/s2_translate.html)
+`s2_merge()` | [Merge S2 tiles with the same date and orbit](https://ranghetti.github.io/sen2r/reference/s2_merge.html)
+`gdal_warp()` | [Clip, reproject and warp raster files](https://ranghetti.github.io/sen2r/reference/gdal_warp.html)
+`s2_mask()` | [Apply cloud masks](https://ranghetti.github.io/sen2r/reference/s2_mask.html)
+`s2_calcindices()` | [Compute maps of spectral indices](https://ranghetti.github.io/sen2r/reference/s2_calcindices.html)
+`s2_thumbnails()` | [Create thumbnails for S2 products](https://ranghetti.github.io/sen2r/reference/s2_thumbnails.html)
+
++++
+
+### [Manage file names and metadata](https://ranghetti.github.io/sen2r/reference/index.html#manage-file-names-and-metadata)
+
+| | |
+---|---
+`safe_getMetadata()` | [Get information from S2 file name or metadata](https://ranghetti.github.io/sen2r/reference/safe_getMetadata.html)
+`safe_shortname()` | [Rename products using a shorten convention](https://ranghetti.github.io/sen2r/reference/safe_shortname.html)
+`sen2r_getElements()` | [Get information from S2 short name](https://ranghetti.github.io/sen2r/reference/sen2r_getElements.html)
+`s2_dop()` | [Return the Dates Of Passage over some orbits](https://ranghetti.github.io/sen2r/reference/s2_dop.html)
+
 
 ---
 
