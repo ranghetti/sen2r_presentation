@@ -1,7 +1,6 @@
 ---?video=https://dlmultimedia.esa.int/download/public/videos/2015/04/008/orig-1504_008_AR_EN.mp4
-@snap[east]
-@color[white](@size[150%](<h1><span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an R toolbox <br/>to find, download <br/>and preprocess <br/>Sentinel-2 data </h1>)
-@snapend
+# <div align="right">@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an R toolbox <br/>to find, download <br/>and preprocess <br/>Sentinel-2 data )</div>
+<div style="position:fixed;left:10px;bottom:0%;">![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=5&data=https://gitpitch.com/ranghetti/sen2r_presentation)</div>
 
 @snap[north-west]
 ![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/assets/img/logo_irea_200px.png)<br/>
