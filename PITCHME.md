@@ -319,6 +319,7 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 
 ```bash
   20  5 * * * /usr/bin/Rscript /mnt/nr_working/luigi/code/saturno/sentinel2/update_s2_lomellina.R
+```
 
 #### Get-IT geoportal
 http://saturno.get-it.it/maps/185/view
