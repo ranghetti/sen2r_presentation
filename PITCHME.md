@@ -233,7 +233,7 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 
 What is needed:
 - an **@color[#2f66d5](R)** script to run;
-- a JSON parameter file [optional] ;
+- [optional] a JSON parameter file;
 - a cron scheduler.
     
 +++?code=scripts/example05.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>[`scripts/example05.R`]((https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example05.R)
