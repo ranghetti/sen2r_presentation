@@ -4,8 +4,8 @@
 
 @snap[north-west]
 ![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/assets/img/logo_irea_200px.png)<br/>
-@color[white](#### Luigi Ranghetti)<br/>
-@color[white](##### CNR-IREA, 2018-07-19)
+#### @color[white](Luigi Ranghetti)<br/>
+##### @color[white](CNR-IREA, 2018-07-19)
 @snapend 
 
 @snap[south-west]
