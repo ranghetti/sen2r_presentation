@@ -39,6 +39,14 @@ sample_coltures <- data.frame(
     rep("Rice (water seeding)", 2), rep("Rice (dry seeding)", 2), 
     rep("Rice (green manure\n+ dry seeding)", 4)
   ),
+  "name" = c(
+    "Maize", "Winter crop\n+ maize 1", 
+    "Winter crop\n+ maize 2", "Winter crop\n+ maize 3",
+    "Early rice\n(water seeding)", "Late rice\n(water seeding)", 
+    "Rice\n(dry seeding) 1", "Rice\n(dry seeding) 2",
+    "Rice (green manure\n+ dry seeding) 1", "Rice (green manure\n+ dry seeding) 2", 
+    "Rice (green manure\n+ dry seeding) 3", "Rice (green manure\n+ dry seeding) 4"
+  ),
   stringsAsFactors = FALSE
 )
 msavi_aggr_sample <- msavi_aggr$stats[
@@ -53,6 +61,8 @@ msavi_aggr_sample$sensor <- msavi_aggr_meta$mission # Sentinel-2A or 2B
 msavi_aggr_sample$orbit <- msavi_aggr_meta$id_orbit # Sentinel-2 orbit
 msavi_aggr_sample$MSAVI <- msavi_aggr_sample$med / 1E4 # from -1000:1000 to -1:1
 msavi_aggr_sample$colture <- sample_coltures[match(msavi_aggr_sample$id, sample_coltures$id), "colture"]
+msavi_aggr_sample$name <- sample_coltures[match(msavi_aggr_sample$id, sample_coltures$id), "name"]
+msavi_aggr_sample$name <- factor(msavi_aggr_sample$name, levels = sample_coltures$name)
 
 # Build plot of time series
 Sys.setlocale("LC_TIME", "en_GB.UTF-8")
@@ -60,8 +70,8 @@ msavi_plot_ts <- ggplot(msavi_aggr_sample, aes(x = date, y = MSAVI, label = colt
   geom_line() + 
   geom_point(aes(colour = orbit, shape = sensor), size = 2) +
   # geom_text(data = sample_coltures, x = as.Date("2018-05-15"), y = 0, aes(label = colture)) +
-  facet_wrap(~id) +
-  coord_cartesian(ylim = c(0, 1)) +
+  facet_wrap(~name) +
+  coord_cartesian(ylim = c(-.1, 1)) +
   theme_light()
 msavi_plotly <- ggplotly(msavi_plot_ts)
 

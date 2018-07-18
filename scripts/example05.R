@@ -5,6 +5,6 @@ log_path <- file.path(data_dir, strftime(Sys.time(), "sen2r_example04_%Y%m%d_%H%
 
 sen2r(
   "/mnt/nr_working/luigi/docs/sen2r/180719_presentation/example02.json",
-  timewindow = 5,
+  timewindow = c(as.Date("2018-03-01"), Sys.Date()),
   log = file.path(data_dir, "logs", strftime(Sys.time(),"sen2r_example_%Y%m%d_%H%M%S.log.txt"))
 )
