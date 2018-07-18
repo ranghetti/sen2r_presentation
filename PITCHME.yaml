@@ -5,4 +5,4 @@ logo-position : top-right
 slide-number : true
 theme-override : assets/css/PITCHME.css
 footnote : "<strong><a style='text-decoration:none;' href='https://github.com/ranghetti/sen2r'>sen2r</a></strong>: an R toolbox to find, download and preprocess Sentinel-2 data. Luigi Ranghetti, CNR-IREA, 2018-07-19. <a style='text-decoration:none;' href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0</a>"
-published : false
+published : true
