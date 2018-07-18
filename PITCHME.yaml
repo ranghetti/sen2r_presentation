@@ -1,6 +1,6 @@
 theme : beige
 layout : center
-logo : https://raw.githubusercontent.com/ranghetti/sen2r/master/man/figures/sen2r_logo_200px.png
+logo : assets/img/logo_sen2r_irea_400px.png
 logo-position : top-right
 slide-number : true
 theme-override : assets/css/PITCHME.css
