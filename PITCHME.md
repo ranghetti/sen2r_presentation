@@ -44,11 +44,13 @@
 
 <img src="https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_logo_1000px.png" width=400px>
 
+@snap[north]
 <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is an **@color[#2f66d5](R)** package with the aims to:
 @ul
 - provide **@color[#2f66d5](R)** functions to *semi-automatically* perform recurrent processing operations on Sentinel-2 products;
 - facilitate the creation and automatic update of time series of Sentinel-2 images over areas of interest.
 @ulend
+@snapend
 
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
 
