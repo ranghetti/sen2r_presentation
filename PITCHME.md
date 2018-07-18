@@ -1,7 +1,8 @@
 ---?video=https://dlmultimedia.esa.int/download/public/videos/2015/04/008/orig-1504_008_AR_EN.mp4
+@title[sen2r presentation @IREA, 2018-07-19]
+
 @snap[south-east]
-<h1>@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an R toolbox <br/>
-    to find, download <br/>and preprocess <br/>Sentinel-2 data )</h1>
+<h1>@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an R toolbox <br/>to find, download <br/>and preprocess <br/>Sentinel-2 data )</h1>
 @snapend
 
 @snap[south-west]
@@ -17,9 +18,7 @@
 
 ---?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
 
-## Introduction
-
-### Sentinel-2 data
+## Sentinel-2 data
 - Sentinel-2A available from July 2015 (revisiting time: 10 day);
 - Sentinel-2B available from July 2017 (joint revisiting time: 5 days);
 
@@ -29,16 +28,19 @@
 </video>
 
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
+@title[Spectral resolution]
 
 - 12 [spectral bands](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/resolutions/radiometric) at 10, 20 or 60 metres [resolution](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/resolutions/spatial):
     ![Sentinel-2 bands](https://landsat.gsfc.nasa.gov/wp-content/uploads/2015/06/Landsat.v.Sentinel-2.png)
 
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
+@title[Revisiting time]
 
 - short [revisiting time](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/revisit-coverage) (5-days or less for cloudly-free areas)
     ![](https://sentinel.esa.int/documents/247904/3394924/Figure-2.jpg)
 
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
+@title[SAFE format]
 
 - provided in [SAFE](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/data-formats) format:
     ![](https://sentinel.esa.int/documents/247904/266422/Sentinel-2_Data_Formats_Figure_1.jpg)
@@ -47,6 +49,7 @@
 
 
 ---?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
+@title[sen2r]
 
 <img src="https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_logo_1000px.png" width=400px>
 
@@ -96,6 +99,7 @@ _Target_: data scientists with basic skills on R and geoprocessing.
     ```
 
 +++
+@title[Dependencies]
 
 3: install external dependencies
 - [**mandatory**] [**GDAL**](http://www.gdal.org/)  (with support for JP2OpenJPEG format) 
@@ -187,6 +191,7 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 <!-- @[10,12-13,24,36-37,40-41](These lines were edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json)) -->
 
 +++
+@title[Run]
 
 Launch it:
 
@@ -205,7 +210,8 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 +++?code=scripts/example03.R&lang=r&title=<h4>Example 03</h4>[`scripts/example03.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example03.R)
 (equivalent to example 02)
 
-+++?code=scripts/example03b.R&lang=r&title=<p>You can also use a parameter file and change only some parameters</p>[`scripts/example03b.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example03b.R)
++++?code=scripts/example03b.R&lang=r&title=<p>You can also use a parameter file and change only some parameters</p>@title[Example 03bl]
+[`scripts/example03b.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example03b.R)
 @[3-7](Build the archive)
 @[9-18](Do the same processing on a different area of interest)
 @[20-28](Change some other processing parameters)
@@ -214,6 +220,7 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 ---?code=data/out_ex02/tree.txt&lang=none&title=<h4>Output</h4>
 
 +++
+@title[Previews]
 
 ##### BOA
 <img height=200px src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/data/out_ex02/S2_Esempio_BOA_10.gif">
@@ -282,6 +289,7 @@ crontab -e
 @[23,26](Now the job is scheduled to run every day at 0:20)
 
 +++
+@title[Task scheduler]
 
 On Windows, use the [Task Scheduler](https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page)
 ![Task Scheduler screenshot](https://i.stack.imgur.com/Aqa57.png)
