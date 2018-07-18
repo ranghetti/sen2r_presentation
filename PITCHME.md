@@ -19,16 +19,8 @@
 ---?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
 
 ## Sentinel-2 data
-- Sentinel-2A available from July 2015 (revisiting time: 10 day);
-- Sentinel-2B available from July 2017 (joint revisiting time: 5 days);
-
-<video width="480" height="300" controls>
-  <source src="https://dlmultimedia.esa.int/download/public/videos/2016/08/004/1608_004_AR_EN.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-+++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
-@title[Spectral resolution]
+- Sentinel-2A available from July 2015;
+- Sentinel-2B available from July 2017;
 
 - 12 [spectral bands](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/resolutions/radiometric) at 10, 20 or 60 metres [resolution](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/resolutions/spatial):
     ![Sentinel-2 bands](https://landsat.gsfc.nasa.gov/wp-content/uploads/2015/06/Landsat.v.Sentinel-2.png)
@@ -36,7 +28,7 @@
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
 @title[Revisiting time]
 
-- short [revisiting time](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/revisit-coverage) (5-days or less for cloudly-free areas)
+- short [revisiting time](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/revisit-coverage) (from July 2017: 5-days or less for cloudly-free areas)
     ![](https://sentinel.esa.int/documents/247904/3394924/Figure-2.jpg)
 
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
