@@ -153,7 +153,6 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 
 @color[blue](`S2mll_yyyymmdd_rrr_ttttt_ppp_rr.fff`)
 
-@ul
 * @color[blue](`S2mll`) mission ID (`S2A` or `S2B`) and product level (`1C` or `2A`);
 * @color[blue](`yyyymmdd`) sensing date (e.g. `20170603` for 2017-06-03);
 * @color[blue](`rrr`) relative orbit number (e.g. `022`);
@@ -161,7 +160,6 @@ Execute it in interactive mode ([shiny](https://shiny.rstudio.com) interface):
 * @color[blue](`ppp`) output product (`TOA`, `BOA`, `TCI`, index name);
 * @color[blue](`rr`) spatial resolution in metres (10, 20 or 60);
 * @color[blue](`fff`) file extension.
-@ulend
 
 E.g. `S2A2A_20180711_065_Esempio_BOA_10.jpg`
 
