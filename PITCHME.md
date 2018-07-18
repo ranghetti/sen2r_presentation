@@ -1,6 +1,12 @@
 ---?video=https://dlmultimedia.esa.int/download/public/videos/2015/04/008/orig-1504_008_AR_EN.mp4
-# <div align="right">@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an R toolbox <br/>to find, download <br/>and preprocess <br/>Sentinel-2 data)</div>
+# <div align="right">@color[white](@size[150%](<span style="color:white;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:white;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:white;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span>:) <br/>an R toolbox <br/>to find, download <br/>and preprocess <br/>Sentinel-2 data )</div>
 <div style="position:fixed;left:10px;bottom:0%;">![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=5&data=https://gitpitch.com/ranghetti/sen2r_presentation)</div>
+
+@snap[north-west]
+<img src="assets/img/logo_irea_400px.png" width=300px>
+@snapend 
+
+
 
 ---?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
 
@@ -27,17 +33,16 @@
     
     (with two different &#x2012; both long &#x2012; [naming conventions](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/naming-convention))
 
+
 ---?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
 
-### What <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is for
+<img src="https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_logo_1000px.png" width=400px>
+
+<span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is an **@color[2f66d5](R)** package with the aims to:
 @ul
-- Facilitate download and preprocessing of Sentinel-2 images;
-- Automate creation of time series of Sentinel-2 images over areas of interest
+- provide **@color[2f66d5](R)** functions to *semi-automatically* perform recurrent processing operations on Sentinel-2 products;
+- facilitate the creation and automatic update of time series of Sentinel-2 images over areas of interest.
 @ulend
-
----?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
-
-### What <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is
 
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
 
@@ -51,12 +56,6 @@
 - obtain output products in easier-to use file formats (e.g. GeoTIFF), managed by GDAL .
 @ulend
 
-+++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
-
-<img src="https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_logo_1000px.png" width=300px>
-
-In general, the aim is to provide R functions to *semi-automatically* perform recurrent processing operations on Sentinel-2 products.
-
 _Target_: data scientists with basic skills on R and geoprocessing.
 
 +++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
@@ -67,6 +66,7 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 - download products through a user-friendly interface<br/>(&rightarrow; GeoGrabber);
 - interactively perform processing operations on specific images<br/>([&rightarrow; ESA SNAP](http://step.esa.int/main/toolboxes/snap)).
 @ulend
+
 
 ---
 
@@ -90,15 +90,18 @@ _Target_: data scientists with basic skills on R and geoprocessing.
 - [*optional*] [**sen2cor**](http://step.esa.int/main/third-party-plugins-2/sen2cor) (required to convert Level-1C to Level-2a)
 - [*optional*] **Wget** (required to work online)
 - [*optional*] [**aria2**](https://aria2.github.io/) (to speed up the download of SAFE archives)
-```r
-check_sen2r_deps()
-# or
-sen2r:::load_binpaths(c("python", "wget", "aria2c", "gdal", "sen2cor"))
-```
-@[1](graphical mode)
-@[3](automatic mode)
+
+* graphical mode:
+    ```r
+    check_sen2r_deps()
+    ```
+* automatic mode:
+    ```r
+    sen2r:::load_binpaths(c("python", "wget", "aria2c", "gdal", "sen2cor"))
+    ```
 
 *A <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> Docker container with all the required dependencies will be created soon.*
+
 
 ---
 
@@ -158,6 +161,7 @@ E.g. `S2A2A_20180711_065_Esempio_BOA_10.jpg`
 
 See also [the documentation](https://ranghetti.github.io/sen2r/reference/s2_shortname.html).
 
+
 ---
 
 ### 2. Run from an existing parameter file
@@ -171,7 +175,7 @@ R -e "sen2r::sen2r('/path/of/the/existing/parameter_file.json')"
 ```
 
 +++?code=scripts/example02.json&lang=json&title=<h4>Example 02</h4>[`scripts/example02.json`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example02.json)
-@[10,12-13,24,36-37,40-41](These lines were edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json))
+<!-- @[10,12-13,24,36-37,40-41](These lines were edited from [scalve.json](https://github.com/ranghetti/sen2r/blob/master/inst/extdata/example_files/scalve.json)) -->
 
 +++
 
@@ -192,9 +196,11 @@ See the [documentation of the function](https://ranghetti.github.io/sen2r/refere
 +++?code=scripts/example03.R&lang=r&title=<h4>Example 03</h4>[`scripts/example03.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example03.R)
 (equivalent to example 02)
 
-+++?code=scripts/example03b.R&lang=r&title=[`scripts/example03b.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example03b.R)
-You can also use a parameter file and change only some parameters
-(useful to launch similar processing chains changing only e.g. the extent)
++++?code=scripts/example03b.R&lang=r&title=<p>You can also use a parameter file and change only some parameters</p>[`scripts/example03b.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example03b.R)
+@[3-7](Build the archive)
+@[9-18](Do the same processing on a different area of interest)
+@[20-28](useful to launch similar processing chains changing only e.g. the extent)
+
 
 ---?code=data/out_ex02/tree.txt&lang=none&title=<h4>Output</h4>
 
@@ -211,10 +217,6 @@ You can also use a parameter file and change only some parameters
 #### Time series
 <iframe height="500" width = "900" src="https://plot.ly/~ranghetti/3.embed"></iframe>
 
-+++
-
-#### Raster stack
-
 +++?code=scripts/example04.R&lang=r&title=<h4>Code to produce the plots</h4>[`scripts/example04.R`](https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example04.R)
 
 
@@ -225,7 +227,7 @@ You can also use a parameter file and change only some parameters
 What is needed:
 - a R script to run;
 - a JSON parameter file [optional] ;
-- a cron job.
+- a cron scheduler.
     
 +++?code=scripts/example05.R&lang=r&title=<h4>Example 04</h4><h5>R script and JSON file</h5>[`scripts/example05.R`]((https://github.com/ranghetti/sen2r_presentation/blob/master/scripts/example05.R)
 @[8](Search and download the last 5 days)
@@ -341,8 +343,8 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 +++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=75% auto&position=center&opacity=50
 
 #### <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> chain
-- [@fa[file](JSON parameter file)](file://localhost/home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/lomellina.json)
-- [@fa[file](R script)](file://localhost/home/lranghetti/nas-s4a/nr_working/luigi/code/saturno/sentinel2/update_s2_lomellina.R)
+- [@fa[file](JSON parameter file)](file://10.0.1.230/mnt/nr_working/luigi/code/saturno/sentinel2/lomellina.json)
+- [@fa[file](R script)](file://10.0.1.230/mnt/nr_working/luigi/code/saturno/sentinel2/update_s2_lomellina.R)
 - crontab entry:
 
 ```bash
@@ -367,10 +369,9 @@ http://saturno.get-it.it/maps/185/view
 
 You can be the beta testers!
 
-In case of errors, you are welcome to [open a new issue on GitHub](https://github.com/ranghetti/sen2r/issues)
-*(anche in italiano)*.
+In case of errors, you are welcome to [open a new issue on GitHub](https://github.com/ranghetti/sen2r/issues) *(anche in italiano)*.
 
-![](https://www.appelmo.com/wp-content/uploads/2016/08/come-guadagnare-come-beta-tester-1.jpg)
+![](http://www.startupshk.com/wp-content/uploads/2015/05/retro_beta_tester1.jpg)
 
 ---?video=https://dlmultimedia.esa.int/download/public/videos/2014/10/038/orig-1410_038_AR_EN.mp4
 
