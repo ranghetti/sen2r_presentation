@@ -3,7 +3,9 @@
 <div style="position:fixed;left:10px;bottom:0%;">![](https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=5&data=https://gitpitch.com/ranghetti/sen2r_presentation)</div>
 
 @snap[north-west]
-<img src="https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/assets/img/logo_irea_400px.png" width=300px>
+![](https://raw.githubusercontent.com/ranghetti/sen2r_presentation/devel/assets/img/logo_irea_200px.png)
+@color[white](Luigi Ranghetti)
+@color[white](CNR-IREA, 2018-07-19)
 @snapend 
 
 
