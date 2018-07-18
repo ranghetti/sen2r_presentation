@@ -23,7 +23,7 @@
 - Sentinel-2A available from July 2015 (revisiting time: 10 day);
 - Sentinel-2B available from July 2017 (joint revisiting time: 5 days);
 
-<video width="320" height="240" controls>
+<video width="480" height="300" controls>
   <source src="https://dlmultimedia.esa.int/download/public/videos/2016/08/004/1608_004_AR_EN.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
