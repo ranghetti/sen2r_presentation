@@ -16,7 +16,7 @@
 @snapend 
 
 
----?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
+---?image=assets/img/bg_s2.jpg&size=cover
 
 ## Sentinel-2 data
 - Sentinel-2A available from July 2015;
@@ -25,14 +25,14 @@
 - 12 [spectral bands](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/resolutions/radiometric) at 10, 20 or 60 metres [resolution](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/resolutions/spatial):
     ![Sentinel-2 bands](https://landsat.gsfc.nasa.gov/wp-content/uploads/2015/06/Landsat.v.Sentinel-2.png)
 
-+++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
++++?image=assets/img/bg_s2.jpg&size=cover
 @title[Revisiting time]
 
 - short [revisiting time](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/revisit-coverage)<br/>
     (from July 2017: 5-days or less for cloudly-free areas)
     ![](https://sentinel.esa.int/documents/247904/3394924/Figure-2.jpg)
 
-+++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
++++?image=assets/img/bg_s2.jpg&size=cover
 @title[SAFE format]
 
 - provided in [SAFE](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/data-formats) format:
@@ -41,7 +41,7 @@
     (with two different &#x2012; both long &#x2012; [naming conventions](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-2-msi/naming-convention))
 
 
----?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
+---?image=assets/img/bg_s2.jpg&size=cover
 @title[sen2r]
 
 <img src="https://raw.githubusercontent.com/ranghetti/sen2r/devel/man/figures/sen2r_logo_1000px.png" width=400px>
@@ -52,7 +52,7 @@
 - facilitate the creation and automatic update of time series of Sentinel-2 images over areas of interest.
 @ulend
 
-+++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
++++?image=image=assets/img/bg_s2.jpg&size=cover
 
 ### What <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is for
 @ul
@@ -66,7 +66,7 @@
 
 _Target_: data scientists with basic skills on **@color[#2f66d5](R)** and geoprocessing.
 
-+++?image=https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2015/02/colour_vision_for_copernicus/15250391-1-eng-GB/Colour_vision_for_Copernicus.jpg&size=cover&opacity=50
++++?image=assets/img/bg_s2.jpg&size=cover
 
 ### What <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> is **not** for
 @ul
@@ -286,7 +286,7 @@ On Windows, use the [Task Scheduler](https://docs.microsoft.com/en-us/windows/de
 ![Task Scheduler screenshot](https://i.stack.imgur.com/Aqa57.png)
 
 
----?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/263.jpg&size=cover&opacity=50
+---?image=assets/img/bg_saturno.jpg&size=cover
 
 ## An example from SATURNO project
 
@@ -295,7 +295,7 @@ On Windows, use the [Task Scheduler](https://docs.microsoft.com/en-us/windows/de
 ### Aim
 Providing NRT images of a proxy of the vegetation status (NDRE index) over the Lomellina rice cultivation district (PV, Italy).
 
-+++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=75% auto&position=center&opacity=50
++++?image=assets/img/bg_saturno.jpg&size=cover
 
 ### Steps
 
@@ -310,7 +310,7 @@ Providing NRT images of a proxy of the vegetation status (NDRE index) over the L
 - Deploy them within a geoportal (Get-IT).
 @olend
 
-+++?image=https://www.progettosaturno.it/wp-content/uploads/2018/01/cropped-progettosaturnodef.png&&size=75% auto&position=center&opacity=50
++++?image=assets/img/bg_saturno.jpg&size=cover
 
 #### <span style="color:#5793dd;vertical-align:top;font-size:90%;font-weight:normal;text-transform:lowercase;">sen</span><span style="color:#6a7077;vertical-align:baseline;font-size:115%;font-weight:bolder;">2</span><span style="color:#2f66d5;vertical-align:baseline;font-size:90%;font-weight:bold;text-transform:lowercase;">r</span> chain
 - [@fa[file](JSON parameter file)](http://10.0.1.230:8787)
