@@ -23,7 +23,8 @@
 Sentinel satellites are _part of_ Europe's [Copernicus programme](https://www.copernicus.eu/en/about-copernicus/copernicus-brief).
 **Aim:** achieving a global, continuous, autonomous, high quality, wide range Earth observation capacity.
 
-+++?image=https://www.copernicus.eu/sites/default/files/documents/Copernicus_Programme_Infrastructure.pdf&size=cover
++++?image=assets/img/bg_s2.jpg&size=cover
+![](https://www.copernicus.eu/sites/default/files/documents/Copernicus_Programme_Infrastructure.pdf)
 
 +++?image=assets/img/bg_s2.jpg&size=cover
 
