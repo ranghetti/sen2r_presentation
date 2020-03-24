@@ -18,7 +18,18 @@
 
 ---?image=assets/img/bg_s2.jpg&size=cover
 
+## Copernicus programme
+
+Sentinel satellites are _part of_ Europe's [Copernicus programme](https://www.copernicus.eu/en/about-copernicus/copernicus-brief).
+**Aim:** achieving a global, continuous, autonomous, high quality, wide range Earth observation capacity.
+
++++?image=https://www.copernicus.eu/sites/default/files/documents/Copernicus_Programme_Infrastructure.pdf&size=cover
+
++++?image=assets/img/bg_s2.jpg&size=cover
+
+
 ## Sentinel-2 data
+
 - Sentinel-2A available from July 2015;
 - Sentinel-2B available from July 2017;
 
